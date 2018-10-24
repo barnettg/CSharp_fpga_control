@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="ISerialUpdate.cs" />
     <Compile Include="ISerialCom.cs" />
+    <Compile Include="Notes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerialCom.cs" />

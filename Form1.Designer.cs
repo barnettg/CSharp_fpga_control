@@ -69,12 +69,65 @@
             this.tb_i2c_address = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tb_7812_write_gpio_data = new System.Windows.Forms.TextBox();
+            this.btn_7812_initialize = new System.Windows.Forms.Button();
+            this.btn_7812_read_gpio = new System.Windows.Forms.Button();
+            this.btn_7812_write_gpio = new System.Windows.Forms.Button();
+            this.tb_7812_read_reg_reg = new System.Windows.Forms.TextBox();
+            this.tb_7812_write_conf1_data = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tb_7812_write_conf0_data = new System.Windows.Forms.TextBox();
+            this.btn_7812_write_config1 = new System.Windows.Forms.Button();
+            this.btn_7812_write_config0 = new System.Windows.Forms.Button();
+            this.lbl_7812_read_adc_data = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.tb_7812_read_adc_num = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tb_7812_set_dac_data = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tb_7812_set_dac_num = new System.Windows.Forms.TextBox();
+            this.lbl_7812_read_reg_data = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tb_7812_write_reg_data = new System.Windows.Forms.TextBox();
+            this.tb_7812_write_reg_reg = new System.Windows.Forms.TextBox();
+            this.btn_7812_read_ADC = new System.Windows.Forms.Button();
+            this.btn_7812_set_DAC = new System.Windows.Forms.Button();
+            this.btn_7812_read_reg = new System.Windows.Forms.Button();
+            this.btn_7812_write_reg = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tb_write_dac = new System.Windows.Forms.TextBox();
+            this.btn_write_dac = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lbl_23017_read_portb_data = new System.Windows.Forms.Label();
+            this.lbl_23017_read_porta_data = new System.Windows.Forms.Label();
+            this.tb_23017_write_portb_data = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tb_23017_write_porta_data = new System.Windows.Forms.TextBox();
+            this.btn_23017_initialize = new System.Windows.Forms.Button();
+            this.btn_23017_write_portb = new System.Windows.Forms.Button();
+            this.btn_23017_write_porta = new System.Windows.Forms.Button();
+            this.btn_23017_read_portb = new System.Windows.Forms.Button();
+            this.btn_23017_read_porta = new System.Windows.Forms.Button();
+            this.lbl_23017_read_reg_data = new System.Windows.Forms.Label();
+            this.tb_23017_read_reg_reg = new System.Windows.Forms.TextBox();
+            this.btn_23017_read_reg = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tb_23017_ID = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.tb_23017_write_reg_data = new System.Windows.Forms.TextBox();
+            this.tb_23017_write_reg_reg = new System.Windows.Forms.TextBox();
+            this.btn_23017_write_reg = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Tab_Commands.SuspendLayout();
             this.tab_serial.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -509,6 +562,33 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.tb_7812_write_gpio_data);
+            this.tabPage2.Controls.Add(this.btn_7812_initialize);
+            this.tabPage2.Controls.Add(this.btn_7812_read_gpio);
+            this.tabPage2.Controls.Add(this.btn_7812_write_gpio);
+            this.tabPage2.Controls.Add(this.tb_7812_read_reg_reg);
+            this.tabPage2.Controls.Add(this.tb_7812_write_conf1_data);
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.Controls.Add(this.tb_7812_write_conf0_data);
+            this.tabPage2.Controls.Add(this.btn_7812_write_config1);
+            this.tabPage2.Controls.Add(this.btn_7812_write_config0);
+            this.tabPage2.Controls.Add(this.lbl_7812_read_adc_data);
+            this.tabPage2.Controls.Add(this.label26);
+            this.tabPage2.Controls.Add(this.tb_7812_read_adc_num);
+            this.tabPage2.Controls.Add(this.label25);
+            this.tabPage2.Controls.Add(this.tb_7812_set_dac_data);
+            this.tabPage2.Controls.Add(this.label24);
+            this.tabPage2.Controls.Add(this.tb_7812_set_dac_num);
+            this.tabPage2.Controls.Add(this.lbl_7812_read_reg_data);
+            this.tabPage2.Controls.Add(this.label22);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.tb_7812_write_reg_data);
+            this.tabPage2.Controls.Add(this.tb_7812_write_reg_reg);
+            this.tabPage2.Controls.Add(this.btn_7812_read_ADC);
+            this.tabPage2.Controls.Add(this.btn_7812_set_DAC);
+            this.tabPage2.Controls.Add(this.btn_7812_read_reg);
+            this.tabPage2.Controls.Add(this.btn_7812_write_reg);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -516,9 +596,255 @@
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "AMC7812 I2C";
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(361, 379);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(108, 18);
+            this.label29.TabIndex = 26;
+            this.label29.Text = "Data (8-bit hex)";
+            // 
+            // tb_7812_write_gpio_data
+            // 
+            this.tb_7812_write_gpio_data.Location = new System.Drawing.Point(393, 400);
+            this.tb_7812_write_gpio_data.Name = "tb_7812_write_gpio_data";
+            this.tb_7812_write_gpio_data.Size = new System.Drawing.Size(35, 24);
+            this.tb_7812_write_gpio_data.TabIndex = 25;
+            this.tb_7812_write_gpio_data.Text = "00";
+            // 
+            // btn_7812_initialize
+            // 
+            this.btn_7812_initialize.Location = new System.Drawing.Point(25, 462);
+            this.btn_7812_initialize.Name = "btn_7812_initialize";
+            this.btn_7812_initialize.Size = new System.Drawing.Size(103, 29);
+            this.btn_7812_initialize.TabIndex = 24;
+            this.btn_7812_initialize.Text = "Initialize";
+            this.btn_7812_initialize.UseVisualStyleBackColor = true;
+            this.btn_7812_initialize.Click += new System.EventHandler(this.btn_7812_initialize_Click);
+            // 
+            // btn_7812_read_gpio
+            // 
+            this.btn_7812_read_gpio.Location = new System.Drawing.Point(25, 427);
+            this.btn_7812_read_gpio.Name = "btn_7812_read_gpio";
+            this.btn_7812_read_gpio.Size = new System.Drawing.Size(103, 29);
+            this.btn_7812_read_gpio.TabIndex = 23;
+            this.btn_7812_read_gpio.Text = "Read GPIO";
+            this.btn_7812_read_gpio.UseVisualStyleBackColor = true;
+            this.btn_7812_read_gpio.Click += new System.EventHandler(this.btn_7812_read_gpio_Click);
+            // 
+            // btn_7812_write_gpio
+            // 
+            this.btn_7812_write_gpio.Location = new System.Drawing.Point(25, 392);
+            this.btn_7812_write_gpio.Name = "btn_7812_write_gpio";
+            this.btn_7812_write_gpio.Size = new System.Drawing.Size(103, 29);
+            this.btn_7812_write_gpio.TabIndex = 22;
+            this.btn_7812_write_gpio.Text = "Write GPIO";
+            this.btn_7812_write_gpio.UseVisualStyleBackColor = true;
+            this.btn_7812_write_gpio.Click += new System.EventHandler(this.btn_7812_write_gpio_Click);
+            // 
+            // tb_7812_read_reg_reg
+            // 
+            this.tb_7812_read_reg_reg.Location = new System.Drawing.Point(216, 110);
+            this.tb_7812_read_reg_reg.Name = "tb_7812_read_reg_reg";
+            this.tb_7812_read_reg_reg.Size = new System.Drawing.Size(35, 24);
+            this.tb_7812_read_reg_reg.TabIndex = 21;
+            this.tb_7812_read_reg_reg.Text = "00";
+            // 
+            // tb_7812_write_conf1_data
+            // 
+            this.tb_7812_write_conf1_data.Location = new System.Drawing.Point(393, 341);
+            this.tb_7812_write_conf1_data.Name = "tb_7812_write_conf1_data";
+            this.tb_7812_write_conf1_data.Size = new System.Drawing.Size(48, 24);
+            this.tb_7812_write_conf1_data.TabIndex = 20;
+            this.tb_7812_write_conf1_data.Text = "0000";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(361, 284);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(116, 18);
+            this.label28.TabIndex = 19;
+            this.label28.Text = "Data (16-bit hex)";
+            // 
+            // tb_7812_write_conf0_data
+            // 
+            this.tb_7812_write_conf0_data.Location = new System.Drawing.Point(393, 305);
+            this.tb_7812_write_conf0_data.Name = "tb_7812_write_conf0_data";
+            this.tb_7812_write_conf0_data.Size = new System.Drawing.Size(48, 24);
+            this.tb_7812_write_conf0_data.TabIndex = 18;
+            this.tb_7812_write_conf0_data.Text = "0000";
+            // 
+            // btn_7812_write_config1
+            // 
+            this.btn_7812_write_config1.Location = new System.Drawing.Point(25, 339);
+            this.btn_7812_write_config1.Name = "btn_7812_write_config1";
+            this.btn_7812_write_config1.Size = new System.Drawing.Size(103, 29);
+            this.btn_7812_write_config1.TabIndex = 17;
+            this.btn_7812_write_config1.Text = "Write Conf1";
+            this.btn_7812_write_config1.UseVisualStyleBackColor = true;
+            this.btn_7812_write_config1.Click += new System.EventHandler(this.btn_7812_write_config1_Click);
+            // 
+            // btn_7812_write_config0
+            // 
+            this.btn_7812_write_config0.Location = new System.Drawing.Point(25, 304);
+            this.btn_7812_write_config0.Name = "btn_7812_write_config0";
+            this.btn_7812_write_config0.Size = new System.Drawing.Size(103, 29);
+            this.btn_7812_write_config0.TabIndex = 16;
+            this.btn_7812_write_config0.Text = "Write Conf0";
+            this.btn_7812_write_config0.UseVisualStyleBackColor = true;
+            this.btn_7812_write_config0.Click += new System.EventHandler(this.btn_7812_write_config0_Click);
+            // 
+            // lbl_7812_read_adc_data
+            // 
+            this.lbl_7812_read_adc_data.AutoSize = true;
+            this.lbl_7812_read_adc_data.Location = new System.Drawing.Point(390, 249);
+            this.lbl_7812_read_adc_data.Name = "lbl_7812_read_adc_data";
+            this.lbl_7812_read_adc_data.Size = new System.Drawing.Size(13, 18);
+            this.lbl_7812_read_adc_data.TabIndex = 15;
+            this.lbl_7812_read_adc_data.Text = "-";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(177, 228);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(144, 18);
+            this.label26.TabIndex = 14;
+            this.label26.Text = "ADC Num (4-bit hex)";
+            // 
+            // tb_7812_read_adc_num
+            // 
+            this.tb_7812_read_adc_num.Location = new System.Drawing.Point(216, 249);
+            this.tb_7812_read_adc_num.Name = "tb_7812_read_adc_num";
+            this.tb_7812_read_adc_num.Size = new System.Drawing.Size(22, 24);
+            this.tb_7812_read_adc_num.TabIndex = 13;
+            this.tb_7812_read_adc_num.Text = "0";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(361, 158);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(116, 18);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Data (12-bit hex)";
+            // 
+            // tb_7812_set_dac_data
+            // 
+            this.tb_7812_set_dac_data.Location = new System.Drawing.Point(393, 179);
+            this.tb_7812_set_dac_data.Name = "tb_7812_set_dac_data";
+            this.tb_7812_set_dac_data.Size = new System.Drawing.Size(48, 24);
+            this.tb_7812_set_dac_data.TabIndex = 11;
+            this.tb_7812_set_dac_data.Text = "000";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(177, 158);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(144, 18);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "DAC Num (4-bit hex)";
+            // 
+            // tb_7812_set_dac_num
+            // 
+            this.tb_7812_set_dac_num.Location = new System.Drawing.Point(216, 179);
+            this.tb_7812_set_dac_num.Name = "tb_7812_set_dac_num";
+            this.tb_7812_set_dac_num.Size = new System.Drawing.Size(22, 24);
+            this.tb_7812_set_dac_num.TabIndex = 9;
+            this.tb_7812_set_dac_num.Text = "0";
+            // 
+            // lbl_7812_read_reg_data
+            // 
+            this.lbl_7812_read_reg_data.AutoSize = true;
+            this.lbl_7812_read_reg_data.Location = new System.Drawing.Point(390, 116);
+            this.lbl_7812_read_reg_data.Name = "lbl_7812_read_reg_data";
+            this.lbl_7812_read_reg_data.Size = new System.Drawing.Size(13, 18);
+            this.lbl_7812_read_reg_data.TabIndex = 8;
+            this.lbl_7812_read_reg_data.Text = "-";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(361, 44);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(116, 18);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Data (16-bit hex)";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(177, 44);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(132, 18);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Register (8-bit hex)";
+            // 
+            // tb_7812_write_reg_data
+            // 
+            this.tb_7812_write_reg_data.Location = new System.Drawing.Point(393, 65);
+            this.tb_7812_write_reg_data.Name = "tb_7812_write_reg_data";
+            this.tb_7812_write_reg_data.Size = new System.Drawing.Size(48, 24);
+            this.tb_7812_write_reg_data.TabIndex = 5;
+            this.tb_7812_write_reg_data.Text = "0000";
+            // 
+            // tb_7812_write_reg_reg
+            // 
+            this.tb_7812_write_reg_reg.Location = new System.Drawing.Point(216, 65);
+            this.tb_7812_write_reg_reg.Name = "tb_7812_write_reg_reg";
+            this.tb_7812_write_reg_reg.Size = new System.Drawing.Size(35, 24);
+            this.tb_7812_write_reg_reg.TabIndex = 4;
+            this.tb_7812_write_reg_reg.Text = "00";
+            // 
+            // btn_7812_read_ADC
+            // 
+            this.btn_7812_read_ADC.Location = new System.Drawing.Point(25, 244);
+            this.btn_7812_read_ADC.Name = "btn_7812_read_ADC";
+            this.btn_7812_read_ADC.Size = new System.Drawing.Size(90, 29);
+            this.btn_7812_read_ADC.TabIndex = 3;
+            this.btn_7812_read_ADC.Text = "Read ADC";
+            this.btn_7812_read_ADC.UseVisualStyleBackColor = true;
+            this.btn_7812_read_ADC.Click += new System.EventHandler(this.btn_7812_read_ADC_Click);
+            // 
+            // btn_7812_set_DAC
+            // 
+            this.btn_7812_set_DAC.Location = new System.Drawing.Point(25, 176);
+            this.btn_7812_set_DAC.Name = "btn_7812_set_DAC";
+            this.btn_7812_set_DAC.Size = new System.Drawing.Size(90, 29);
+            this.btn_7812_set_DAC.TabIndex = 2;
+            this.btn_7812_set_DAC.Text = "Set DAC";
+            this.btn_7812_set_DAC.UseVisualStyleBackColor = true;
+            this.btn_7812_set_DAC.Click += new System.EventHandler(this.btn_7812_set_DAC_Click);
+            // 
+            // btn_7812_read_reg
+            // 
+            this.btn_7812_read_reg.Location = new System.Drawing.Point(25, 111);
+            this.btn_7812_read_reg.Name = "btn_7812_read_reg";
+            this.btn_7812_read_reg.Size = new System.Drawing.Size(90, 29);
+            this.btn_7812_read_reg.TabIndex = 1;
+            this.btn_7812_read_reg.Text = "Read Reg";
+            this.btn_7812_read_reg.UseVisualStyleBackColor = true;
+            this.btn_7812_read_reg.Click += new System.EventHandler(this.btn_7812_read_reg_Click);
+            // 
+            // btn_7812_write_reg
+            // 
+            this.btn_7812_write_reg.Location = new System.Drawing.Point(25, 63);
+            this.btn_7812_write_reg.Name = "btn_7812_write_reg";
+            this.btn_7812_write_reg.Size = new System.Drawing.Size(90, 29);
+            this.btn_7812_write_reg.TabIndex = 0;
+            this.btn_7812_write_reg.Text = "Write Reg";
+            this.btn_7812_write_reg.UseVisualStyleBackColor = true;
+            this.btn_7812_write_reg.Click += new System.EventHandler(this.btn_7812_write_reg_Click);
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.tb_write_dac);
+            this.tabPage3.Controls.Add(this.btn_write_dac);
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -526,15 +852,242 @@
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "MCP4725 DAC I2C";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(230, 44);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(71, 18);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "12-bit hex";
+            // 
+            // tb_write_dac
+            // 
+            this.tb_write_dac.Location = new System.Drawing.Point(143, 41);
+            this.tb_write_dac.Name = "tb_write_dac";
+            this.tb_write_dac.Size = new System.Drawing.Size(52, 24);
+            this.tb_write_dac.TabIndex = 1;
+            // 
+            // btn_write_dac
+            // 
+            this.btn_write_dac.Location = new System.Drawing.Point(24, 39);
+            this.btn_write_dac.Name = "btn_write_dac";
+            this.btn_write_dac.Size = new System.Drawing.Size(93, 29);
+            this.btn_write_dac.TabIndex = 0;
+            this.btn_write_dac.Text = "Write DAC";
+            this.btn_write_dac.UseVisualStyleBackColor = true;
+            this.btn_write_dac.Click += new System.EventHandler(this.btn_write_dac_Click);
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage4.Controls.Add(this.lbl_23017_read_portb_data);
+            this.tabPage4.Controls.Add(this.lbl_23017_read_porta_data);
+            this.tabPage4.Controls.Add(this.tb_23017_write_portb_data);
+            this.tabPage4.Controls.Add(this.label34);
+            this.tabPage4.Controls.Add(this.tb_23017_write_porta_data);
+            this.tabPage4.Controls.Add(this.btn_23017_initialize);
+            this.tabPage4.Controls.Add(this.btn_23017_write_portb);
+            this.tabPage4.Controls.Add(this.btn_23017_write_porta);
+            this.tabPage4.Controls.Add(this.btn_23017_read_portb);
+            this.tabPage4.Controls.Add(this.btn_23017_read_porta);
+            this.tabPage4.Controls.Add(this.lbl_23017_read_reg_data);
+            this.tabPage4.Controls.Add(this.tb_23017_read_reg_reg);
+            this.tabPage4.Controls.Add(this.btn_23017_read_reg);
+            this.tabPage4.Controls.Add(this.label32);
+            this.tabPage4.Controls.Add(this.tb_23017_ID);
+            this.tabPage4.Controls.Add(this.label30);
+            this.tabPage4.Controls.Add(this.label31);
+            this.tabPage4.Controls.Add(this.tb_23017_write_reg_data);
+            this.tabPage4.Controls.Add(this.tb_23017_write_reg_reg);
+            this.tabPage4.Controls.Add(this.btn_23017_write_reg);
             this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(633, 513);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "MCP23017 I2C";
+            // 
+            // lbl_23017_read_portb_data
+            // 
+            this.lbl_23017_read_portb_data.AutoSize = true;
+            this.lbl_23017_read_portb_data.Location = new System.Drawing.Point(393, 242);
+            this.lbl_23017_read_portb_data.Name = "lbl_23017_read_portb_data";
+            this.lbl_23017_read_portb_data.Size = new System.Drawing.Size(13, 18);
+            this.lbl_23017_read_portb_data.TabIndex = 27;
+            this.lbl_23017_read_portb_data.Text = "-";
+            // 
+            // lbl_23017_read_porta_data
+            // 
+            this.lbl_23017_read_porta_data.AutoSize = true;
+            this.lbl_23017_read_porta_data.Location = new System.Drawing.Point(393, 207);
+            this.lbl_23017_read_porta_data.Name = "lbl_23017_read_porta_data";
+            this.lbl_23017_read_porta_data.Size = new System.Drawing.Size(13, 18);
+            this.lbl_23017_read_porta_data.TabIndex = 26;
+            this.lbl_23017_read_porta_data.Text = "-";
+            // 
+            // tb_23017_write_portb_data
+            // 
+            this.tb_23017_write_portb_data.Location = new System.Drawing.Point(396, 333);
+            this.tb_23017_write_portb_data.Name = "tb_23017_write_portb_data";
+            this.tb_23017_write_portb_data.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_write_portb_data.TabIndex = 25;
+            this.tb_23017_write_portb_data.Text = "00";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(364, 276);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(108, 18);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "Data (8-bit hex)";
+            // 
+            // tb_23017_write_porta_data
+            // 
+            this.tb_23017_write_porta_data.Location = new System.Drawing.Point(396, 297);
+            this.tb_23017_write_porta_data.Name = "tb_23017_write_porta_data";
+            this.tb_23017_write_porta_data.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_write_porta_data.TabIndex = 23;
+            this.tb_23017_write_porta_data.Text = "00";
+            // 
+            // btn_23017_initialize
+            // 
+            this.btn_23017_initialize.Location = new System.Drawing.Point(37, 401);
+            this.btn_23017_initialize.Name = "btn_23017_initialize";
+            this.btn_23017_initialize.Size = new System.Drawing.Size(113, 29);
+            this.btn_23017_initialize.TabIndex = 22;
+            this.btn_23017_initialize.Text = "Initialize";
+            this.btn_23017_initialize.UseVisualStyleBackColor = true;
+            this.btn_23017_initialize.Click += new System.EventHandler(this.btn_23017_initialize_Click);
+            // 
+            // btn_23017_write_portb
+            // 
+            this.btn_23017_write_portb.Location = new System.Drawing.Point(37, 331);
+            this.btn_23017_write_portb.Name = "btn_23017_write_portb";
+            this.btn_23017_write_portb.Size = new System.Drawing.Size(113, 29);
+            this.btn_23017_write_portb.TabIndex = 21;
+            this.btn_23017_write_portb.Text = "Write Port B";
+            this.btn_23017_write_portb.UseVisualStyleBackColor = true;
+            this.btn_23017_write_portb.Click += new System.EventHandler(this.btn_23017_write_portb_Click);
+            // 
+            // btn_23017_write_porta
+            // 
+            this.btn_23017_write_porta.Location = new System.Drawing.Point(37, 296);
+            this.btn_23017_write_porta.Name = "btn_23017_write_porta";
+            this.btn_23017_write_porta.Size = new System.Drawing.Size(113, 29);
+            this.btn_23017_write_porta.TabIndex = 20;
+            this.btn_23017_write_porta.Text = "Write Port A";
+            this.btn_23017_write_porta.UseVisualStyleBackColor = true;
+            this.btn_23017_write_porta.Click += new System.EventHandler(this.btn_23017_write_porta_Click);
+            // 
+            // btn_23017_read_portb
+            // 
+            this.btn_23017_read_portb.Location = new System.Drawing.Point(37, 237);
+            this.btn_23017_read_portb.Name = "btn_23017_read_portb";
+            this.btn_23017_read_portb.Size = new System.Drawing.Size(113, 29);
+            this.btn_23017_read_portb.TabIndex = 19;
+            this.btn_23017_read_portb.Text = "Read Port B";
+            this.btn_23017_read_portb.UseVisualStyleBackColor = true;
+            this.btn_23017_read_portb.Click += new System.EventHandler(this.btn_23017_read_portb_Click);
+            // 
+            // btn_23017_read_porta
+            // 
+            this.btn_23017_read_porta.Location = new System.Drawing.Point(37, 202);
+            this.btn_23017_read_porta.Name = "btn_23017_read_porta";
+            this.btn_23017_read_porta.Size = new System.Drawing.Size(113, 29);
+            this.btn_23017_read_porta.TabIndex = 18;
+            this.btn_23017_read_porta.Text = "Read Port A";
+            this.btn_23017_read_porta.UseVisualStyleBackColor = true;
+            this.btn_23017_read_porta.Click += new System.EventHandler(this.btn_23017_read_porta_Click);
+            // 
+            // lbl_23017_read_reg_data
+            // 
+            this.lbl_23017_read_reg_data.AutoSize = true;
+            this.lbl_23017_read_reg_data.Location = new System.Drawing.Point(393, 152);
+            this.lbl_23017_read_reg_data.Name = "lbl_23017_read_reg_data";
+            this.lbl_23017_read_reg_data.Size = new System.Drawing.Size(13, 18);
+            this.lbl_23017_read_reg_data.TabIndex = 17;
+            this.lbl_23017_read_reg_data.Text = "-";
+            // 
+            // tb_23017_read_reg_reg
+            // 
+            this.tb_23017_read_reg_reg.Location = new System.Drawing.Point(233, 146);
+            this.tb_23017_read_reg_reg.Name = "tb_23017_read_reg_reg";
+            this.tb_23017_read_reg_reg.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_read_reg_reg.TabIndex = 16;
+            this.tb_23017_read_reg_reg.Text = "00";
+            // 
+            // btn_23017_read_reg
+            // 
+            this.btn_23017_read_reg.Location = new System.Drawing.Point(37, 141);
+            this.btn_23017_read_reg.Name = "btn_23017_read_reg";
+            this.btn_23017_read_reg.Size = new System.Drawing.Size(90, 29);
+            this.btn_23017_read_reg.TabIndex = 15;
+            this.btn_23017_read_reg.Text = "Read Reg";
+            this.btn_23017_read_reg.UseVisualStyleBackColor = true;
+            this.btn_23017_read_reg.Click += new System.EventHandler(this.btn_23017_read_reg_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(34, 30);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(57, 18);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "ID (0-5)";
+            // 
+            // tb_23017_ID
+            // 
+            this.tb_23017_ID.Location = new System.Drawing.Point(148, 27);
+            this.tb_23017_ID.Name = "tb_23017_ID";
+            this.tb_23017_ID.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_ID.TabIndex = 13;
+            this.tb_23017_ID.Text = "0";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(364, 71);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(108, 18);
+            this.label30.TabIndex = 12;
+            this.label30.Text = "Data (8-bit hex)";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(194, 71);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(132, 18);
+            this.label31.TabIndex = 11;
+            this.label31.Text = "Register (8-bit hex)";
+            // 
+            // tb_23017_write_reg_data
+            // 
+            this.tb_23017_write_reg_data.Location = new System.Drawing.Point(396, 92);
+            this.tb_23017_write_reg_data.Name = "tb_23017_write_reg_data";
+            this.tb_23017_write_reg_data.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_write_reg_data.TabIndex = 10;
+            this.tb_23017_write_reg_data.Text = "00";
+            // 
+            // tb_23017_write_reg_reg
+            // 
+            this.tb_23017_write_reg_reg.Location = new System.Drawing.Point(233, 92);
+            this.tb_23017_write_reg_reg.Name = "tb_23017_write_reg_reg";
+            this.tb_23017_write_reg_reg.Size = new System.Drawing.Size(35, 24);
+            this.tb_23017_write_reg_reg.TabIndex = 9;
+            this.tb_23017_write_reg_reg.Text = "00";
+            // 
+            // btn_23017_write_reg
+            // 
+            this.btn_23017_write_reg.Location = new System.Drawing.Point(37, 87);
+            this.btn_23017_write_reg.Name = "btn_23017_write_reg";
+            this.btn_23017_write_reg.Size = new System.Drawing.Size(90, 29);
+            this.btn_23017_write_reg.TabIndex = 8;
+            this.btn_23017_write_reg.Text = "Write Reg";
+            this.btn_23017_write_reg.UseVisualStyleBackColor = true;
+            this.btn_23017_write_reg.Click += new System.EventHandler(this.btn_23017_write_reg_Click);
             // 
             // MainForm
             // 
@@ -553,6 +1106,12 @@
             this.tab_serial.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -602,6 +1161,56 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox tb_write_dac;
+        private System.Windows.Forms.Button btn_write_dac;
+        private System.Windows.Forms.Label lbl_7812_read_adc_data;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox tb_7812_read_adc_num;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tb_7812_set_dac_data;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox tb_7812_set_dac_num;
+        private System.Windows.Forms.Label lbl_7812_read_reg_data;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox tb_7812_write_reg_data;
+        private System.Windows.Forms.TextBox tb_7812_write_reg_reg;
+        private System.Windows.Forms.Button btn_7812_read_ADC;
+        private System.Windows.Forms.Button btn_7812_set_DAC;
+        private System.Windows.Forms.Button btn_7812_read_reg;
+        private System.Windows.Forms.Button btn_7812_write_reg;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox tb_7812_write_gpio_data;
+        private System.Windows.Forms.Button btn_7812_initialize;
+        private System.Windows.Forms.Button btn_7812_read_gpio;
+        private System.Windows.Forms.Button btn_7812_write_gpio;
+        private System.Windows.Forms.TextBox tb_7812_read_reg_reg;
+        private System.Windows.Forms.TextBox tb_7812_write_conf1_data;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox tb_7812_write_conf0_data;
+        private System.Windows.Forms.Button btn_7812_write_config1;
+        private System.Windows.Forms.Button btn_7812_write_config0;
+        private System.Windows.Forms.Label lbl_23017_read_portb_data;
+        private System.Windows.Forms.Label lbl_23017_read_porta_data;
+        private System.Windows.Forms.TextBox tb_23017_write_portb_data;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox tb_23017_write_porta_data;
+        private System.Windows.Forms.Button btn_23017_initialize;
+        private System.Windows.Forms.Button btn_23017_write_portb;
+        private System.Windows.Forms.Button btn_23017_write_porta;
+        private System.Windows.Forms.Button btn_23017_read_portb;
+        private System.Windows.Forms.Button btn_23017_read_porta;
+        private System.Windows.Forms.Label lbl_23017_read_reg_data;
+        private System.Windows.Forms.TextBox tb_23017_read_reg_reg;
+        private System.Windows.Forms.Button btn_23017_read_reg;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox tb_23017_ID;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox tb_23017_write_reg_data;
+        private System.Windows.Forms.TextBox tb_23017_write_reg_reg;
+        private System.Windows.Forms.Button btn_23017_write_reg;
     }
 }
 
