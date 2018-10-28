@@ -162,6 +162,36 @@ namespace SpiI2cControlCsharp
             return (byte)((dta & 0xF) + 'A' - 10);
         }
 
+        string sendTransaction(string data)
+        {
+            byte[] outData = new byte[9];
+            string retStr = "";
+
+            int offset = 0;
+            foreach (char item in data)
+            {
+                outData[offset] = (byte)item;
+                offset++;
+            }
+            outData[offset] = 13; // CR
+            arduino.Send(outData, 0, offset + 1);
+
+            int sleepCounter = 0;
+            while (receivedData.Count == 0)
+            {
+                sleepCounter++;
+                if (sleepCounter > 20) break; //waited long enough
+                Thread.Sleep(50); // milliseconds
+            }
+
+            if (receivedData.Count > 0)
+            {
+                retStr = receivedData[0];
+                receivedData.RemoveAt(0);
+            }
+
+            return retStr;
+        }
 
         #region I2C
 
@@ -171,8 +201,6 @@ namespace SpiI2cControlCsharp
         }
 
         #endregion
-
-
 
         #region MCP4725 DAC
         // DWXXX<cr>  -- write DAC XXX
@@ -231,37 +259,6 @@ namespace SpiI2cControlCsharp
         }
 
         #endregion
-
-        string  sendTransaction(string data)
-        {
-            byte[] outData = new byte[9];
-            string retStr = "";
-
-            int offset = 0;
-            foreach( char item in data)
-            {
-                outData[offset] = (byte)item;
-                offset++;
-            }
-            outData[offset] = 13; // CR
-            arduino.Send(outData, 0, offset+1);
-
-            int sleepCounter = 0;
-            while (receivedData.Count == 0)
-            {
-                sleepCounter++;
-                if (sleepCounter > 20) break; //waited long enough
-                Thread.Sleep(50); // milliseconds
-            }
-
-            if (receivedData.Count > 0)
-            {
-                retStr = receivedData[0];
-                receivedData.RemoveAt(0);
-            }
-
-            return retStr;
-        }
 
         #region AMC7812
         private void btn_7812_write_reg_Click(object sender, EventArgs e)
@@ -413,7 +410,6 @@ namespace SpiI2cControlCsharp
             Messageboard("rec: " + results);
         }
         #endregion
-
 
         #region MPC23017
         private void btn_23017_write_reg_Click(object sender, EventArgs e)
