@@ -32,7 +32,7 @@ namespace SpiI2cControlCsharp
 
         public void Update(String message)
         {
-            Messageboard(message);
+            Messageboard("\r\nupdate: " + message);
             receivedData.Add(message);
         }
         #region Serial
@@ -164,6 +164,8 @@ namespace SpiI2cControlCsharp
 
         string sendTransaction(string data)
         {
+            Messageboard("\r\nsendTransaction: " + data);
+
             byte[] outData = new byte[9];
             string retStr = "";
 
@@ -174,11 +176,15 @@ namespace SpiI2cControlCsharp
                 offset++;
             }
             outData[offset] = 13; // CR
+
+            receivedData.Clear(); // clear the rec buffer to sync up data
+
             arduino.Send(outData, 0, offset + 1);
 
             int sleepCounter = 0;
             while (receivedData.Count == 0)
             {
+                Application.DoEvents();  // do this because serial rec is not a thread
                 sleepCounter++;
                 if (sleepCounter > 20) break; //waited long enough
                 Thread.Sleep(50); // milliseconds
@@ -189,7 +195,7 @@ namespace SpiI2cControlCsharp
                 retStr = receivedData[0];
                 receivedData.RemoveAt(0);
             }
-
+            Messageboard("\r\nsendTransaction rec: " + retStr);
             return retStr;
         }
 
@@ -219,9 +225,9 @@ namespace SpiI2cControlCsharp
             if (dataStr.Length > 3) dataStr = "000";
 
             String total_string = "DW" + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
 
 
             //try
@@ -280,9 +286,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "AW" + reg + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_read_reg_Click(object sender, EventArgs e)
@@ -297,9 +303,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "AR" + reg;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_set_DAC_Click(object sender, EventArgs e)
@@ -321,9 +327,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "AD" + num + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_read_ADC_Click(object sender, EventArgs e)
@@ -338,9 +344,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "AA" + num;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+           // Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_write_config0_Click(object sender, EventArgs e)
@@ -355,9 +361,9 @@ namespace SpiI2cControlCsharp
             if (dataStr.Length > 4) dataStr = "0000";
 
             String total_string = "AW4C" + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
 
         }
 
@@ -373,9 +379,9 @@ namespace SpiI2cControlCsharp
             if (dataStr.Length > 4) dataStr = "0000";
 
             String total_string = "AW4D" + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_write_gpio_Click(object sender, EventArgs e)
@@ -389,25 +395,25 @@ namespace SpiI2cControlCsharp
             if (dataStr.Length > 2) dataStr = "00";
 
             String total_string = "AGW" + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_read_gpio_Click(object sender, EventArgs e)
         {
             String total_string = "AGR";
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_7812_initialize_Click(object sender, EventArgs e)
         {
             String total_string = "AI";
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+           // Messageboard("\r\nrec: " + results);
         }
         #endregion
 
@@ -442,9 +448,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "GW" + id + reg + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\r\nrec: " + results);
         }
 
         private void btn_23017_read_reg_Click(object sender, EventArgs e)
@@ -469,9 +475,9 @@ namespace SpiI2cControlCsharp
 
 
             String total_string = "GR" + id + reg;
-            Messageboard(total_string);
+            //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
 
         private void btn_23017_read_porta_Click(object sender, EventArgs e)
@@ -486,9 +492,9 @@ namespace SpiI2cControlCsharp
             if (id.Length > 1) id = "0";
 
             String total_string = "GAR" + id ;
-            Messageboard(total_string);
+           // Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
 
         private void btn_23017_read_portb_Click(object sender, EventArgs e)
@@ -503,9 +509,9 @@ namespace SpiI2cControlCsharp
             if (id.Length > 1) id = "0";
 
             String total_string = "GBR" + id;
-            Messageboard(total_string);
+            //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
 
         private void btn_23017_write_porta_Click(object sender, EventArgs e)
@@ -527,9 +533,9 @@ namespace SpiI2cControlCsharp
             if (id.Length > 1) id = "0";
 
             String total_string = "GAW" + id + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
 
         private void btn_23017_write_portb_Click(object sender, EventArgs e)
@@ -551,9 +557,9 @@ namespace SpiI2cControlCsharp
             if (id.Length > 1) id = "0";
 
             String total_string = "GBW" + id + dataStr;
-            Messageboard(total_string);
+            //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
 
         private void btn_23017_initialize_Click(object sender, EventArgs e)
@@ -568,9 +574,9 @@ namespace SpiI2cControlCsharp
             if (id.Length > 1) id = "0";
 
             String total_string = "GI" + id;
-            Messageboard(total_string);
+            //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            Messageboard("rec: " + results);
+            //Messageboard("\nrec: " + results);
         }
         #endregion
     }

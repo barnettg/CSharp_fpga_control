@@ -325,6 +325,7 @@
             this.tb_messages.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tb_messages.Size = new System.Drawing.Size(369, 499);
             this.tb_messages.TabIndex = 0;
+            this.tb_messages.WordWrap = false;
             // 
             // tabPage1
             // 
