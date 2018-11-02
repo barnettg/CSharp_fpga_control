@@ -28,6 +28,7 @@ namespace SpiI2cControlCsharp
                 cb_SerialPorts.Items.Add(item);
             }
             arduino.RegisterToRec(this);
+            tabControl1.TabPages.Remove(tabPage_genericI2C); 
         }
 
         public void Update(String message)
@@ -196,6 +197,7 @@ namespace SpiI2cControlCsharp
                 receivedData.RemoveAt(0);
             }
             Messageboard("\r\nsendTransaction rec: " + retStr);
+            retStr = retStr.Trim(); // picking up erroneous \n
             return retStr;
         }
 
@@ -294,6 +296,7 @@ namespace SpiI2cControlCsharp
         private void btn_7812_read_reg_Click(object sender, EventArgs e)
         {
             String reg = tb_7812_read_reg_reg.Text;
+            lbl_7812_read_reg_data.Text = "-";
 
             while (reg.Length < 2)
             {
@@ -305,6 +308,12 @@ namespace SpiI2cControlCsharp
             String total_string = "AR" + reg;
             //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
+            results = results.Trim();
+            // format  arRRDDDD 16-bit hex  DDDD  
+            if (results.Length >= 7)
+            {
+                lbl_7812_read_reg_data.Text = results.Substring(4, 4);
+            }
             //Messageboard("\r\nrec: " + results);
         }
 
@@ -335,6 +344,8 @@ namespace SpiI2cControlCsharp
         private void btn_7812_read_ADC_Click(object sender, EventArgs e)
         {
             String num = tb_7812_read_adc_num.Text;
+            lbl_7812_read_adc_data.Text = "-";
+
 
             while (num.Length < 1)
             {
@@ -346,7 +357,12 @@ namespace SpiI2cControlCsharp
             String total_string = "AA" + num;
             //Messageboard("\r\n" + total_string);
             string results = sendTransaction(total_string);
-           // Messageboard("\r\nrec: " + results);
+            results = results.Trim();
+            // format  aanDDD 12-bit hex  DDD  
+            if (results.Length >= 6)
+            {
+                lbl_7812_read_adc_data.Text = results.Substring(3, 3);
+            }
         }
 
         private void btn_7812_write_config0_Click(object sender, EventArgs e)
@@ -460,6 +476,7 @@ namespace SpiI2cControlCsharp
 
             String reg = tb_23017_read_reg_reg.Text;
             String id = tb_23017_ID.Text;
+            lbl_23017_read_reg_data.Text = "-";
 
             while (id.Length < 1)
             {
@@ -477,13 +494,19 @@ namespace SpiI2cControlCsharp
             String total_string = "GR" + id + reg;
             //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
-            //Messageboard("\nrec: " + results);
+            results = results.Trim();
+            // format grnrrdd   with data  DD(8-bit hex) 
+            if (results.Length >= 7)
+            {
+                lbl_23017_read_reg_data.Text = results.Substring(5, 2);
+            }
         }
 
         private void btn_23017_read_porta_Click(object sender, EventArgs e)
         {
             // ID tb_23017_ID
             String id = tb_23017_ID.Text;
+            lbl_23017_read_porta_data.Text = "-";
 
             while (id.Length < 1)
             {
@@ -494,6 +517,12 @@ namespace SpiI2cControlCsharp
             String total_string = "GAR" + id ;
            // Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
+            results = results.Trim();
+            // format garNDD  wher N is device ID and DD is hex data
+            if(results.Length>=6)
+            {
+                lbl_23017_read_porta_data.Text = results.Substring(4,2);
+            }
             //Messageboard("\nrec: " + results);
         }
 
@@ -501,6 +530,7 @@ namespace SpiI2cControlCsharp
         {
             // ID tb_23017_ID
             String id = tb_23017_ID.Text;
+            lbl_23017_read_portb_data.Text = "-";
 
             while (id.Length < 1)
             {
@@ -511,6 +541,12 @@ namespace SpiI2cControlCsharp
             String total_string = "GBR" + id;
             //Messageboard("\n" + total_string);
             string results = sendTransaction(total_string);
+            results = results.Trim();
+            // format gbrNDD  wher N is device ID and DD is hex data
+            if (results.Length >= 6)
+            {
+                lbl_23017_read_portb_data.Text = results.Substring(4, 2);
+            }
             //Messageboard("\nrec: " + results);
         }
 

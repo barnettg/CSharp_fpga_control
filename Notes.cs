@@ -8,6 +8,10 @@ namespace SpiI2cControlCsharp
 {
     class Notes
     {
+        // to do:
+        // getting \n on received data beginning - can use Trim to remove but need to find where it is comming from
+
+
 
         //MCP4725DAC
         // send DWxxx<cr>   set DAC to hex value xxx

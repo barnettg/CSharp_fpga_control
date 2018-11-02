@@ -45,7 +45,7 @@
             this.btn_Ser_open = new System.Windows.Forms.Button();
             this.btn_Ser_clear = new System.Windows.Forms.Button();
             this.tb_messages = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage_genericI2C = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@
             this.tabControl1.SuspendLayout();
             this.Tab_Commands.SuspendLayout();
             this.tab_serial.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabPage_genericI2C.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -137,7 +137,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.Tab_Commands);
             this.tabControl1.Controls.Add(this.tab_serial);
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage_genericI2C);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -327,37 +327,37 @@
             this.tb_messages.TabIndex = 0;
             this.tb_messages.WordWrap = false;
             // 
-            // tabPage1
+            // tabPage_genericI2C
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.btn_clr_i2c_rx);
-            this.tabPage1.Controls.Add(this.btn_i2c_read8raw);
-            this.tabPage1.Controls.Add(this.btn_i2c_read8);
-            this.tabPage1.Controls.Add(this.btn_i2c_write8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.tb_i2c_tx8);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.tb_i2c_address);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(633, 513);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Generic I2C";
+            this.tabPage_genericI2C.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage_genericI2C.Controls.Add(this.textBox2);
+            this.tabPage_genericI2C.Controls.Add(this.label19);
+            this.tabPage_genericI2C.Controls.Add(this.label18);
+            this.tabPage_genericI2C.Controls.Add(this.label17);
+            this.tabPage_genericI2C.Controls.Add(this.label16);
+            this.tabPage_genericI2C.Controls.Add(this.label15);
+            this.tabPage_genericI2C.Controls.Add(this.label14);
+            this.tabPage_genericI2C.Controls.Add(this.label13);
+            this.tabPage_genericI2C.Controls.Add(this.label12);
+            this.tabPage_genericI2C.Controls.Add(this.label11);
+            this.tabPage_genericI2C.Controls.Add(this.label6);
+            this.tabPage_genericI2C.Controls.Add(this.label2);
+            this.tabPage_genericI2C.Controls.Add(this.btn_clr_i2c_rx);
+            this.tabPage_genericI2C.Controls.Add(this.btn_i2c_read8raw);
+            this.tabPage_genericI2C.Controls.Add(this.btn_i2c_read8);
+            this.tabPage_genericI2C.Controls.Add(this.btn_i2c_write8);
+            this.tabPage_genericI2C.Controls.Add(this.label7);
+            this.tabPage_genericI2C.Controls.Add(this.label8);
+            this.tabPage_genericI2C.Controls.Add(this.tb_i2c_tx8);
+            this.tabPage_genericI2C.Controls.Add(this.label9);
+            this.tabPage_genericI2C.Controls.Add(this.tb_i2c_address);
+            this.tabPage_genericI2C.Controls.Add(this.label10);
+            this.tabPage_genericI2C.Location = new System.Drawing.Point(4, 27);
+            this.tabPage_genericI2C.Name = "tabPage_genericI2C";
+            this.tabPage_genericI2C.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_genericI2C.Size = new System.Drawing.Size(633, 513);
+            this.tabPage_genericI2C.TabIndex = 2;
+            this.tabPage_genericI2C.Text = "Generic I2C";
             // 
             // textBox2
             // 
@@ -654,6 +654,7 @@
             // 
             // tb_7812_write_conf1_data
             // 
+            this.tb_7812_write_conf1_data.Enabled = false;
             this.tb_7812_write_conf1_data.Location = new System.Drawing.Point(393, 341);
             this.tb_7812_write_conf1_data.Name = "tb_7812_write_conf1_data";
             this.tb_7812_write_conf1_data.Size = new System.Drawing.Size(48, 24);
@@ -663,6 +664,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Enabled = false;
             this.label28.Location = new System.Drawing.Point(361, 284);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(116, 18);
@@ -671,6 +673,7 @@
             // 
             // tb_7812_write_conf0_data
             // 
+            this.tb_7812_write_conf0_data.Enabled = false;
             this.tb_7812_write_conf0_data.Location = new System.Drawing.Point(393, 305);
             this.tb_7812_write_conf0_data.Name = "tb_7812_write_conf0_data";
             this.tb_7812_write_conf0_data.Size = new System.Drawing.Size(48, 24);
@@ -679,6 +682,7 @@
             // 
             // btn_7812_write_config1
             // 
+            this.btn_7812_write_config1.Enabled = false;
             this.btn_7812_write_config1.Location = new System.Drawing.Point(25, 339);
             this.btn_7812_write_config1.Name = "btn_7812_write_config1";
             this.btn_7812_write_config1.Size = new System.Drawing.Size(103, 29);
@@ -689,6 +693,7 @@
             // 
             // btn_7812_write_config0
             // 
+            this.btn_7812_write_config0.Enabled = false;
             this.btn_7812_write_config0.Location = new System.Drawing.Point(25, 304);
             this.btn_7812_write_config0.Name = "btn_7812_write_config0";
             this.btn_7812_write_config0.Size = new System.Drawing.Size(103, 29);
@@ -1105,8 +1110,8 @@
             this.Tab_Commands.PerformLayout();
             this.tab_serial.ResumeLayout(false);
             this.tab_serial.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabPage_genericI2C.ResumeLayout(false);
+            this.tabPage_genericI2C.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1136,7 +1141,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_send_spi;
         private System.Windows.Forms.Button btn_clr_spi_rx;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage_genericI2C;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
