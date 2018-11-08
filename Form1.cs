@@ -514,16 +514,35 @@ namespace SpiI2cControlCsharp
             }
             if (id.Length > 1) id = "0";
 
-            String total_string = "GAR" + id ;
-           // Messageboard("\n" + total_string);
-            string results = sendTransaction(total_string);
-            results = results.Trim();
-            // format garNDD  wher N is device ID and DD is hex data
-            if(results.Length>=6)
+            if(cb_use_bit_read_porta.Checked)
             {
-                lbl_23017_read_porta_data.Text = results.Substring(4,2);
+                // single bit
+                //   send GXARNZ<cr>  read device N(0-5) port A bit Z
+                //    rec back gxarnzD   with data  D(1-bit hex) 
+                String bitNumber = tb_bit_num_rd_porta.Text;
+                if (bitNumber.Length != 1) bitNumber = "0";
+
+                String total_string = "GXAR" + id + bitNumber;
+                string results = sendTransaction(total_string);
+                if (results.Length >= 7)
+                {
+                    lbl_23017_read_porta_data.Text = results.Substring(6, 1);
+                }
+
             }
-            //Messageboard("\nrec: " + results);
+            else
+            { 
+                String total_string = "GAR" + id ;
+               // Messageboard("\n" + total_string);
+                string results = sendTransaction(total_string);
+                results = results.Trim();
+                // format garNDD  wher N is device ID and DD is hex data
+                if(results.Length>=6)
+                {
+                    lbl_23017_read_porta_data.Text = results.Substring(4,2);
+                }
+                    //Messageboard("\nrec: " + results);
+            }
         }
 
         private void btn_23017_read_portb_Click(object sender, EventArgs e)
@@ -538,16 +557,35 @@ namespace SpiI2cControlCsharp
             }
             if (id.Length > 1) id = "0";
 
-            String total_string = "GBR" + id;
-            //Messageboard("\n" + total_string);
-            string results = sendTransaction(total_string);
-            results = results.Trim();
-            // format gbrNDD  wher N is device ID and DD is hex data
-            if (results.Length >= 6)
+            if (cb_use_bit_read_portb.Checked)
             {
-                lbl_23017_read_portb_data.Text = results.Substring(4, 2);
+                // single bit
+                //   send GXBRNZ<cr>  read device N(0-5) port B bit Z
+                //    rec back gxbrnzD   with data  D(1-bit hex) 
+                String bitNumber = tb_bit_num_rd_portb.Text;
+                if (bitNumber.Length != 1) bitNumber = "0";
+
+                String total_string = "GXBR" + id + bitNumber;
+                string results = sendTransaction(total_string);
+                if (results.Length >= 7)
+                {
+                    lbl_23017_read_portb_data.Text = results.Substring(6, 1);
+                }
+
             }
-            //Messageboard("\nrec: " + results);
+            else
+            {
+
+                String total_string = "GBR" + id;
+                //Messageboard("\n" + total_string);
+                string results = sendTransaction(total_string);
+                results = results.Trim();
+                // format gbrNDD  wher N is device ID and DD is hex data
+                if (results.Length >= 6)
+                {
+                    lbl_23017_read_portb_data.Text = results.Substring(4, 2);
+                }
+            }
         }
 
         private void btn_23017_write_porta_Click(object sender, EventArgs e)
@@ -556,22 +594,40 @@ namespace SpiI2cControlCsharp
             String id = tb_23017_ID.Text;
             String dataStr = tb_23017_write_porta_data.Text;
 
-            while (dataStr.Length < 2)
-            {
-                dataStr = "0" + dataStr;
-            }
-            if (dataStr.Length > 2) dataStr = "00";
-
             while (id.Length < 1)
             {
                 id = "0" + id;
             }
             if (id.Length > 1) id = "0";
 
-            String total_string = "GAW" + id + dataStr;
-            //Messageboard("\n" + total_string);
-            string results = sendTransaction(total_string);
-            //Messageboard("\nrec: " + results);
+            if (cb_use_bit_write_porta.Checked)
+            {
+                // single bit
+                //   send GXAWNZD<cr>  write device N(0-5) port A bit Z with data D(1-bit hex) 
+                //    rec back gxawnzD   
+                String bitNumber = tb_bit_num_wr_porta.Text;
+                if (bitNumber.Length != 1) bitNumber = "0";
+                if (dataStr.Length != 1) dataStr = "0";
+
+                String total_string = "GXAW" + id + bitNumber + dataStr;
+                string results = sendTransaction(total_string);
+
+            }
+            else
+            {
+                //   send GAWNDD<cr>  write device N(0-5) port A with data  DD(8-bit hex) 
+                //    rec back gawnDD   
+                while (dataStr.Length < 2)
+                {
+                    dataStr = "0" + dataStr;
+                }
+                if (dataStr.Length > 2) dataStr = "00";
+
+                String total_string = "GAW" + id + dataStr;
+                //Messageboard("\n" + total_string);
+                string results = sendTransaction(total_string);
+                //Messageboard("\nrec: " + results);
+            }
         }
 
         private void btn_23017_write_portb_Click(object sender, EventArgs e)
@@ -580,22 +636,40 @@ namespace SpiI2cControlCsharp
             String id = tb_23017_ID.Text;
             String dataStr = tb_23017_write_portb_data.Text;
 
-            while (dataStr.Length < 2)
-            {
-                dataStr = "0" + dataStr;
-            }
-            if (dataStr.Length > 2) dataStr = "00";
-
             while (id.Length < 1)
             {
                 id = "0" + id;
             }
             if (id.Length > 1) id = "0";
 
-            String total_string = "GBW" + id + dataStr;
-            //Messageboard("\n" + total_string);
-            string results = sendTransaction(total_string);
-            //Messageboard("\nrec: " + results);
+            if (cb_use_bit_write_portb.Checked)
+            {
+                // single bit
+                //   send GXBWNZD<cr>  write device N(0-5) port A bit Z with data D(1-bit hex) 
+                //    rec back gxbwnzD   
+                String bitNumber = tb_bit_num_wr_portb.Text;
+                if (bitNumber.Length != 1) bitNumber = "0";
+                if (dataStr.Length != 1) dataStr = "0";
+
+                String total_string = "GXBW" + id + bitNumber + dataStr;
+                string results = sendTransaction(total_string);
+
+            }
+            else
+            {
+                //   send GBWNDD<cr>  read device N(0-5) port B with data  DD(8-bit hex) 
+                //    rec back gbwnDD  
+                while (dataStr.Length < 2)
+                {
+                    dataStr = "0" + dataStr;
+                }
+                if (dataStr.Length > 2) dataStr = "00";
+
+                String total_string = "GBW" + id + dataStr;
+                //Messageboard("\n" + total_string);
+                string results = sendTransaction(total_string);
+                //Messageboard("\nrec: " + results);
+            }
         }
 
         private void btn_23017_initialize_Click(object sender, EventArgs e)
@@ -615,5 +689,109 @@ namespace SpiI2cControlCsharp
             //Messageboard("\nrec: " + results);
         }
         #endregion
+
+        private void btn_setup_basic_conf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_set_pds_ave_v_Click(object sender, EventArgs e)
+        {
+            string val = tb_set_pds_ave_v.Text;
+            double number = 0;
+            Double.TryParse(val, out number);
+            // set AMC7812  dac #2 12-bit hex value
+
+            int dacData = (int)(number * 4095 / 5.0);
+            string dataStr = dacData.ToString("X3");
+
+            String total_string = "AD2" + dataStr;
+            string results = sendTransaction(total_string);
+        }
+
+        private void btn_set_pd1_ave_v_Click(object sender, EventArgs e)
+        {
+            string val = tb_set_pd1_ave_v.Text;
+            double number = 0;
+            Double.TryParse(val, out number);
+            // set AMC7812  dac #3 12-bit hex value
+
+            int dacData = (int)(number * 4095 / 5.0);
+            string dataStr = dacData.ToString("X3");
+
+            String total_string = "AD3" + dataStr;
+            string results = sendTransaction(total_string);
+        }
+
+        private void btn_set_pd2_ave_v_Click(object sender, EventArgs e)
+        {
+            string val = tb_set_pd2_ave_v.Text;
+            double number = 0;
+            Double.TryParse(val, out number);
+            // set AMC7812  dac #8 12-bit hex value
+
+            int dacData = (int)(number * 4095 / 5.0);
+            string dataStr = dacData.ToString("X3");
+
+            String total_string = "AD8" + dataStr;
+            string results = sendTransaction(total_string);
+        }
+
+        private void btn_set_pd3_ave_v_Click(object sender, EventArgs e)
+        {
+            string val = tb_set_pd3_ave_v.Text;
+            double number = 0;
+            Double.TryParse(val, out number);
+            // set AMC7812  dac #7 12-bit hex value
+
+            int dacData = (int)(number * 4095 / 5.0);
+            string dataStr = dacData.ToString("X3");
+
+            String total_string = "AD7" + dataStr;
+            string results = sendTransaction(total_string);
+        }
+
+        private void btn_set_humidity_percent_Click(object sender, EventArgs e)
+        {
+            string val = tb_set_humidity_percent.Text;
+            double number = 0;
+            Double.TryParse(val, out number);
+            // set AMC7812  dac #10 12-bit hex value
+
+            int dacData = (int)(number * 4095 / 5.0); //  need to check humidity device for 100% voltage
+            string dataStr = dacData.ToString("X3");
+
+            String total_string = "ADA" + dataStr;
+            string results = sendTransaction(total_string);
+        }
+
+        private void btn_read_recirc_Click(object sender, EventArgs e)
+        {
+            // MCP23017 0x20 port b bit 2
+            // lbl_read_recirc   recirc: 
+
+            // --------------------------- need protocol for bits ------------------------
+
+
+        }
+
+        private void btn_read_indicator_Click(object sender, EventArgs e)
+        {
+            // MCP23017 0x22 port B bits 4 and/or 5 
+            // lbl_indicator   Indicator:
+        }
+
+        private void cb_keyOn_CheckedChanged(object sender, EventArgs e)
+        {
+            //MCP23017 0x21 port B bit0
+            // cb_keyOn
+        }
+
+        private void cb_interlock_en_CheckedChanged(object sender, EventArgs e)
+        {
+            // MCP23017 0x21 port A bit3
+            // cb_interlock_en
+
+        }
     }
 }

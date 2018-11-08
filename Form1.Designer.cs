@@ -121,6 +121,74 @@
             this.tb_23017_write_reg_data = new System.Windows.Forms.TextBox();
             this.tb_23017_write_reg_reg = new System.Windows.Forms.TextBox();
             this.btn_23017_write_reg = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cb_interlock_en = new System.Windows.Forms.CheckBox();
+            this.tb_set_humidity_percent = new System.Windows.Forms.TextBox();
+            this.btn_set_humidity_percent = new System.Windows.Forms.Button();
+            this.cb_keyOn = new System.Windows.Forms.CheckBox();
+            this.lbl_indicator = new System.Windows.Forms.Label();
+            this.btn_read_indicator = new System.Windows.Forms.Button();
+            this.tb_set_pd3_ave_v = new System.Windows.Forms.TextBox();
+            this.btn_set_pd3_ave_v = new System.Windows.Forms.Button();
+            this.tb_set_pd2_ave_v = new System.Windows.Forms.TextBox();
+            this.btn_set_pd2_ave_v = new System.Windows.Forms.Button();
+            this.tb_set_pd1_ave_v = new System.Windows.Forms.TextBox();
+            this.btn_set_pd1_ave_v = new System.Windows.Forms.Button();
+            this.tb_set_pds_ave_v = new System.Windows.Forms.TextBox();
+            this.btn_set_pds_ave_v = new System.Windows.Forms.Button();
+            this.btn_run_control = new System.Windows.Forms.Button();
+            this.lbl_read_recirc = new System.Windows.Forms.Label();
+            this.btn_read_recirc = new System.Windows.Forms.Button();
+            this.btn_setup_basic_conf = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.lbl_Shutter_Closed = new System.Windows.Forms.Label();
+            this.lbl_Shutter_Open = new System.Windows.Forms.Label();
+            this.lbl_System_Status = new System.Windows.Forms.Label();
+            this.cb_Shutdown_En = new System.Windows.Forms.CheckBox();
+            this.cb_Shutter_open_en = new System.Windows.Forms.CheckBox();
+            this.cb_FF_Interlock_En = new System.Windows.Forms.CheckBox();
+            this.cb_Active_en = new System.Windows.Forms.CheckBox();
+            this.cb_Pulse_en = new System.Windows.Forms.CheckBox();
+            this.cb_Pulse_Pick_en = new System.Windows.Forms.CheckBox();
+            this.lbl_Laser_Ready = new System.Windows.Forms.Label();
+            this.btn_Read_Ext_Interface = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.cb_OS_Open = new System.Windows.Forms.CheckBox();
+            this.cb_OSERR2 = new System.Windows.Forms.CheckBox();
+            this.cb_OI2_closed = new System.Windows.Forms.CheckBox();
+            this.cb_OI1_closed = new System.Windows.Forms.CheckBox();
+            this.cb_OS_Closed = new System.Windows.Forms.CheckBox();
+            this.cb_OSERR1 = new System.Windows.Forms.CheckBox();
+            this.lbl_safeShutter_rd = new System.Windows.Forms.Label();
+            this.btn_Read_Safe_Shutter = new System.Windows.Forms.Button();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tb_Set_SHG_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_SHG_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_Base_2_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_Base_2_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_Base_1_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_Base_1_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_PC3_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_PC3_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_CFBG2_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_CFBG2_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_CFBG_Temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_CFBG_Temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_D2_temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_D2_temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_D1_temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_D1_temp_C = new System.Windows.Forms.Button();
+            this.tb_Set_DS_temp_C = new System.Windows.Forms.TextBox();
+            this.btn_Set_DS_temp_C = new System.Windows.Forms.Button();
+            this.cb_use_bit_read_porta = new System.Windows.Forms.CheckBox();
+            this.cb_use_bit_read_portb = new System.Windows.Forms.CheckBox();
+            this.cb_use_bit_write_porta = new System.Windows.Forms.CheckBox();
+            this.cb_use_bit_write_portb = new System.Windows.Forms.CheckBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tb_bit_num_rd_porta = new System.Windows.Forms.TextBox();
+            this.tb_bit_num_rd_portb = new System.Windows.Forms.TextBox();
+            this.tb_bit_num_wr_porta = new System.Windows.Forms.TextBox();
+            this.tb_bit_num_wr_portb = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.Tab_Commands.SuspendLayout();
             this.tab_serial.SuspendLayout();
@@ -128,6 +196,10 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -141,13 +213,17 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(20, 18);
+            this.tabControl1.Location = new System.Drawing.Point(13, 4);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(641, 544);
+            this.tabControl1.Size = new System.Drawing.Size(711, 611);
             this.tabControl1.TabIndex = 0;
             // 
             // Tab_Commands
@@ -161,11 +237,11 @@
             this.Tab_Commands.Controls.Add(this.label4);
             this.Tab_Commands.Controls.Add(this.tb_SpiAddress);
             this.Tab_Commands.Controls.Add(this.label3);
-            this.Tab_Commands.Location = new System.Drawing.Point(4, 27);
+            this.Tab_Commands.Location = new System.Drawing.Point(4, 50);
             this.Tab_Commands.Margin = new System.Windows.Forms.Padding(4);
             this.Tab_Commands.Name = "Tab_Commands";
             this.Tab_Commands.Padding = new System.Windows.Forms.Padding(4);
-            this.Tab_Commands.Size = new System.Drawing.Size(633, 513);
+            this.Tab_Commands.Size = new System.Drawing.Size(633, 490);
             this.Tab_Commands.TabIndex = 0;
             this.Tab_Commands.Text = "Generic SPI";
             // 
@@ -254,11 +330,11 @@
             this.tab_serial.Controls.Add(this.btn_Ser_open);
             this.tab_serial.Controls.Add(this.btn_Ser_clear);
             this.tab_serial.Controls.Add(this.tb_messages);
-            this.tab_serial.Location = new System.Drawing.Point(4, 27);
+            this.tab_serial.Location = new System.Drawing.Point(4, 50);
             this.tab_serial.Margin = new System.Windows.Forms.Padding(4);
             this.tab_serial.Name = "tab_serial";
             this.tab_serial.Padding = new System.Windows.Forms.Padding(4);
-            this.tab_serial.Size = new System.Drawing.Size(633, 513);
+            this.tab_serial.Size = new System.Drawing.Size(703, 557);
             this.tab_serial.TabIndex = 1;
             this.tab_serial.Text = "Serial";
             // 
@@ -266,7 +342,7 @@
             // 
             this.cb_SerialPorts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_SerialPorts.FormattingEnabled = true;
-            this.cb_SerialPorts.Location = new System.Drawing.Point(383, 32);
+            this.cb_SerialPorts.Location = new System.Drawing.Point(453, 32);
             this.cb_SerialPorts.Name = "cb_SerialPorts";
             this.cb_SerialPorts.Size = new System.Drawing.Size(243, 26);
             this.cb_SerialPorts.TabIndex = 5;
@@ -275,7 +351,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(382, 10);
+            this.label1.Location = new System.Drawing.Point(452, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 18);
             this.label1.TabIndex = 4;
@@ -284,7 +360,7 @@
             // btn_Ser_close
             // 
             this.btn_Ser_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Ser_close.Location = new System.Drawing.Point(547, 64);
+            this.btn_Ser_close.Location = new System.Drawing.Point(617, 64);
             this.btn_Ser_close.Name = "btn_Ser_close";
             this.btn_Ser_close.Size = new System.Drawing.Size(79, 28);
             this.btn_Ser_close.TabIndex = 3;
@@ -295,7 +371,7 @@
             // btn_Ser_open
             // 
             this.btn_Ser_open.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Ser_open.Location = new System.Drawing.Point(382, 64);
+            this.btn_Ser_open.Location = new System.Drawing.Point(452, 64);
             this.btn_Ser_open.Name = "btn_Ser_open";
             this.btn_Ser_open.Size = new System.Drawing.Size(79, 28);
             this.btn_Ser_open.TabIndex = 2;
@@ -306,7 +382,7 @@
             // btn_Ser_clear
             // 
             this.btn_Ser_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Ser_clear.Location = new System.Drawing.Point(382, 478);
+            this.btn_Ser_clear.Location = new System.Drawing.Point(453, 522);
             this.btn_Ser_clear.Name = "btn_Ser_clear";
             this.btn_Ser_clear.Size = new System.Drawing.Size(79, 28);
             this.btn_Ser_clear.TabIndex = 1;
@@ -323,7 +399,7 @@
             this.tb_messages.Multiline = true;
             this.tb_messages.Name = "tb_messages";
             this.tb_messages.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_messages.Size = new System.Drawing.Size(369, 499);
+            this.tb_messages.Size = new System.Drawing.Size(439, 566);
             this.tb_messages.TabIndex = 0;
             this.tb_messages.WordWrap = false;
             // 
@@ -352,10 +428,10 @@
             this.tabPage_genericI2C.Controls.Add(this.label9);
             this.tabPage_genericI2C.Controls.Add(this.tb_i2c_address);
             this.tabPage_genericI2C.Controls.Add(this.label10);
-            this.tabPage_genericI2C.Location = new System.Drawing.Point(4, 27);
+            this.tabPage_genericI2C.Location = new System.Drawing.Point(4, 50);
             this.tabPage_genericI2C.Name = "tabPage_genericI2C";
             this.tabPage_genericI2C.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_genericI2C.Size = new System.Drawing.Size(633, 513);
+            this.tabPage_genericI2C.Size = new System.Drawing.Size(633, 490);
             this.tabPage_genericI2C.TabIndex = 2;
             this.tabPage_genericI2C.Text = "Generic I2C";
             // 
@@ -590,10 +666,10 @@
             this.tabPage2.Controls.Add(this.btn_7812_set_DAC);
             this.tabPage2.Controls.Add(this.btn_7812_read_reg);
             this.tabPage2.Controls.Add(this.btn_7812_write_reg);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Location = new System.Drawing.Point(4, 50);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(633, 513);
+            this.tabPage2.Size = new System.Drawing.Size(633, 490);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "AMC7812 I2C";
             // 
@@ -851,10 +927,10 @@
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.tb_write_dac);
             this.tabPage3.Controls.Add(this.btn_write_dac);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Location = new System.Drawing.Point(4, 50);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(633, 513);
+            this.tabPage3.Size = new System.Drawing.Size(633, 490);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "MCP4725 DAC I2C";
             // 
@@ -887,6 +963,15 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage4.Controls.Add(this.tb_bit_num_wr_portb);
+            this.tabPage4.Controls.Add(this.tb_bit_num_wr_porta);
+            this.tabPage4.Controls.Add(this.tb_bit_num_rd_portb);
+            this.tabPage4.Controls.Add(this.tb_bit_num_rd_porta);
+            this.tabPage4.Controls.Add(this.label23);
+            this.tabPage4.Controls.Add(this.cb_use_bit_write_portb);
+            this.tabPage4.Controls.Add(this.cb_use_bit_write_porta);
+            this.tabPage4.Controls.Add(this.cb_use_bit_read_portb);
+            this.tabPage4.Controls.Add(this.cb_use_bit_read_porta);
             this.tabPage4.Controls.Add(this.lbl_23017_read_portb_data);
             this.tabPage4.Controls.Add(this.lbl_23017_read_porta_data);
             this.tabPage4.Controls.Add(this.tb_23017_write_portb_data);
@@ -907,10 +992,10 @@
             this.tabPage4.Controls.Add(this.tb_23017_write_reg_data);
             this.tabPage4.Controls.Add(this.tb_23017_write_reg_reg);
             this.tabPage4.Controls.Add(this.btn_23017_write_reg);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 50);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(633, 513);
+            this.tabPage4.Size = new System.Drawing.Size(703, 557);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "MCP23017 I2C";
             // 
@@ -1095,11 +1180,678 @@
             this.btn_23017_write_reg.UseVisualStyleBackColor = true;
             this.btn_23017_write_reg.Click += new System.EventHandler(this.btn_23017_write_reg_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage1.Controls.Add(this.cb_interlock_en);
+            this.tabPage1.Controls.Add(this.tb_set_humidity_percent);
+            this.tabPage1.Controls.Add(this.btn_set_humidity_percent);
+            this.tabPage1.Controls.Add(this.cb_keyOn);
+            this.tabPage1.Controls.Add(this.lbl_indicator);
+            this.tabPage1.Controls.Add(this.btn_read_indicator);
+            this.tabPage1.Controls.Add(this.tb_set_pd3_ave_v);
+            this.tabPage1.Controls.Add(this.btn_set_pd3_ave_v);
+            this.tabPage1.Controls.Add(this.tb_set_pd2_ave_v);
+            this.tabPage1.Controls.Add(this.btn_set_pd2_ave_v);
+            this.tabPage1.Controls.Add(this.tb_set_pd1_ave_v);
+            this.tabPage1.Controls.Add(this.btn_set_pd1_ave_v);
+            this.tabPage1.Controls.Add(this.tb_set_pds_ave_v);
+            this.tabPage1.Controls.Add(this.btn_set_pds_ave_v);
+            this.tabPage1.Controls.Add(this.btn_run_control);
+            this.tabPage1.Controls.Add(this.lbl_read_recirc);
+            this.tabPage1.Controls.Add(this.btn_read_recirc);
+            this.tabPage1.Controls.Add(this.btn_setup_basic_conf);
+            this.tabPage1.Location = new System.Drawing.Point(4, 50);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(633, 490);
+            this.tabPage1.TabIndex = 6;
+            this.tabPage1.Text = "Tester Setup";
+            // 
+            // cb_interlock_en
+            // 
+            this.cb_interlock_en.AutoSize = true;
+            this.cb_interlock_en.Location = new System.Drawing.Point(336, 282);
+            this.cb_interlock_en.Name = "cb_interlock_en";
+            this.cb_interlock_en.Size = new System.Drawing.Size(105, 22);
+            this.cb_interlock_en.TabIndex = 65;
+            this.cb_interlock_en.Text = "Interlock En";
+            this.cb_interlock_en.UseVisualStyleBackColor = true;
+            this.cb_interlock_en.CheckedChanged += new System.EventHandler(this.cb_interlock_en_CheckedChanged);
+            // 
+            // tb_set_humidity_percent
+            // 
+            this.tb_set_humidity_percent.Location = new System.Drawing.Point(188, 304);
+            this.tb_set_humidity_percent.Name = "tb_set_humidity_percent";
+            this.tb_set_humidity_percent.Size = new System.Drawing.Size(57, 24);
+            this.tb_set_humidity_percent.TabIndex = 54;
+            // 
+            // btn_set_humidity_percent
+            // 
+            this.btn_set_humidity_percent.Location = new System.Drawing.Point(21, 300);
+            this.btn_set_humidity_percent.Name = "btn_set_humidity_percent";
+            this.btn_set_humidity_percent.Size = new System.Drawing.Size(146, 32);
+            this.btn_set_humidity_percent.TabIndex = 53;
+            this.btn_set_humidity_percent.Text = "Set Humidity %";
+            this.btn_set_humidity_percent.UseVisualStyleBackColor = true;
+            this.btn_set_humidity_percent.Click += new System.EventHandler(this.btn_set_humidity_percent_Click);
+            // 
+            // cb_keyOn
+            // 
+            this.cb_keyOn.AutoSize = true;
+            this.cb_keyOn.Location = new System.Drawing.Point(336, 254);
+            this.cb_keyOn.Name = "cb_keyOn";
+            this.cb_keyOn.Size = new System.Drawing.Size(72, 22);
+            this.cb_keyOn.TabIndex = 52;
+            this.cb_keyOn.Text = "KeyOn";
+            this.cb_keyOn.UseVisualStyleBackColor = true;
+            this.cb_keyOn.CheckedChanged += new System.EventHandler(this.cb_keyOn_CheckedChanged);
+            // 
+            // lbl_indicator
+            // 
+            this.lbl_indicator.AutoSize = true;
+            this.lbl_indicator.Location = new System.Drawing.Point(521, 132);
+            this.lbl_indicator.Name = "lbl_indicator";
+            this.lbl_indicator.Size = new System.Drawing.Size(72, 18);
+            this.lbl_indicator.TabIndex = 23;
+            this.lbl_indicator.Text = "Indicator: ";
+            // 
+            // btn_read_indicator
+            // 
+            this.btn_read_indicator.Location = new System.Drawing.Point(336, 125);
+            this.btn_read_indicator.Name = "btn_read_indicator";
+            this.btn_read_indicator.Size = new System.Drawing.Size(141, 32);
+            this.btn_read_indicator.TabIndex = 22;
+            this.btn_read_indicator.Text = "Read Indicator";
+            this.btn_read_indicator.UseVisualStyleBackColor = true;
+            this.btn_read_indicator.Click += new System.EventHandler(this.btn_read_indicator_Click);
+            // 
+            // tb_set_pd3_ave_v
+            // 
+            this.tb_set_pd3_ave_v.Location = new System.Drawing.Point(188, 248);
+            this.tb_set_pd3_ave_v.Name = "tb_set_pd3_ave_v";
+            this.tb_set_pd3_ave_v.Size = new System.Drawing.Size(57, 24);
+            this.tb_set_pd3_ave_v.TabIndex = 21;
+            // 
+            // btn_set_pd3_ave_v
+            // 
+            this.btn_set_pd3_ave_v.Location = new System.Drawing.Point(21, 244);
+            this.btn_set_pd3_ave_v.Name = "btn_set_pd3_ave_v";
+            this.btn_set_pd3_ave_v.Size = new System.Drawing.Size(146, 32);
+            this.btn_set_pd3_ave_v.TabIndex = 20;
+            this.btn_set_pd3_ave_v.Text = "Set PD3 Avg V";
+            this.btn_set_pd3_ave_v.UseVisualStyleBackColor = true;
+            this.btn_set_pd3_ave_v.Click += new System.EventHandler(this.btn_set_pd3_ave_v_Click);
+            // 
+            // tb_set_pd2_ave_v
+            // 
+            this.tb_set_pd2_ave_v.Location = new System.Drawing.Point(188, 193);
+            this.tb_set_pd2_ave_v.Name = "tb_set_pd2_ave_v";
+            this.tb_set_pd2_ave_v.Size = new System.Drawing.Size(57, 24);
+            this.tb_set_pd2_ave_v.TabIndex = 15;
+            // 
+            // btn_set_pd2_ave_v
+            // 
+            this.btn_set_pd2_ave_v.Location = new System.Drawing.Point(21, 189);
+            this.btn_set_pd2_ave_v.Name = "btn_set_pd2_ave_v";
+            this.btn_set_pd2_ave_v.Size = new System.Drawing.Size(146, 32);
+            this.btn_set_pd2_ave_v.TabIndex = 14;
+            this.btn_set_pd2_ave_v.Text = "Set PD2 ave V";
+            this.btn_set_pd2_ave_v.UseVisualStyleBackColor = true;
+            this.btn_set_pd2_ave_v.Click += new System.EventHandler(this.btn_set_pd2_ave_v_Click);
+            // 
+            // tb_set_pd1_ave_v
+            // 
+            this.tb_set_pd1_ave_v.Location = new System.Drawing.Point(188, 144);
+            this.tb_set_pd1_ave_v.Name = "tb_set_pd1_ave_v";
+            this.tb_set_pd1_ave_v.Size = new System.Drawing.Size(57, 24);
+            this.tb_set_pd1_ave_v.TabIndex = 11;
+            // 
+            // btn_set_pd1_ave_v
+            // 
+            this.btn_set_pd1_ave_v.Location = new System.Drawing.Point(21, 140);
+            this.btn_set_pd1_ave_v.Name = "btn_set_pd1_ave_v";
+            this.btn_set_pd1_ave_v.Size = new System.Drawing.Size(146, 32);
+            this.btn_set_pd1_ave_v.TabIndex = 10;
+            this.btn_set_pd1_ave_v.Text = "Set PD1 ave V";
+            this.btn_set_pd1_ave_v.UseVisualStyleBackColor = true;
+            this.btn_set_pd1_ave_v.Click += new System.EventHandler(this.btn_set_pd1_ave_v_Click);
+            // 
+            // tb_set_pds_ave_v
+            // 
+            this.tb_set_pds_ave_v.Location = new System.Drawing.Point(188, 95);
+            this.tb_set_pds_ave_v.Name = "tb_set_pds_ave_v";
+            this.tb_set_pds_ave_v.Size = new System.Drawing.Size(57, 24);
+            this.tb_set_pds_ave_v.TabIndex = 7;
+            // 
+            // btn_set_pds_ave_v
+            // 
+            this.btn_set_pds_ave_v.Location = new System.Drawing.Point(21, 91);
+            this.btn_set_pds_ave_v.Name = "btn_set_pds_ave_v";
+            this.btn_set_pds_ave_v.Size = new System.Drawing.Size(146, 32);
+            this.btn_set_pds_ave_v.TabIndex = 6;
+            this.btn_set_pds_ave_v.Text = "Set PDS AVG V";
+            this.btn_set_pds_ave_v.UseVisualStyleBackColor = true;
+            this.btn_set_pds_ave_v.Click += new System.EventHandler(this.btn_set_pds_ave_v_Click);
+            // 
+            // btn_run_control
+            // 
+            this.btn_run_control.Location = new System.Drawing.Point(21, 6);
+            this.btn_run_control.Name = "btn_run_control";
+            this.btn_run_control.Size = new System.Drawing.Size(146, 32);
+            this.btn_run_control.TabIndex = 3;
+            this.btn_run_control.Text = "Run control mode";
+            this.btn_run_control.UseVisualStyleBackColor = true;
+            // 
+            // lbl_read_recirc
+            // 
+            this.lbl_read_recirc.AutoSize = true;
+            this.lbl_read_recirc.Location = new System.Drawing.Point(521, 94);
+            this.lbl_read_recirc.Name = "lbl_read_recirc";
+            this.lbl_read_recirc.Size = new System.Drawing.Size(53, 18);
+            this.lbl_read_recirc.TabIndex = 2;
+            this.lbl_read_recirc.Text = "recirc: ";
+            // 
+            // btn_read_recirc
+            // 
+            this.btn_read_recirc.Location = new System.Drawing.Point(336, 87);
+            this.btn_read_recirc.Name = "btn_read_recirc";
+            this.btn_read_recirc.Size = new System.Drawing.Size(141, 32);
+            this.btn_read_recirc.TabIndex = 1;
+            this.btn_read_recirc.Text = "Read recirculator";
+            this.btn_read_recirc.UseVisualStyleBackColor = true;
+            this.btn_read_recirc.Click += new System.EventHandler(this.btn_read_recirc_Click);
+            // 
+            // btn_setup_basic_conf
+            // 
+            this.btn_setup_basic_conf.Location = new System.Drawing.Point(217, 6);
+            this.btn_setup_basic_conf.Name = "btn_setup_basic_conf";
+            this.btn_setup_basic_conf.Size = new System.Drawing.Size(146, 32);
+            this.btn_setup_basic_conf.TabIndex = 0;
+            this.btn_setup_basic_conf.Text = "Setup basic config";
+            this.btn_setup_basic_conf.UseVisualStyleBackColor = true;
+            this.btn_setup_basic_conf.Click += new System.EventHandler(this.btn_setup_basic_conf_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage5.Controls.Add(this.lbl_Shutter_Closed);
+            this.tabPage5.Controls.Add(this.lbl_Shutter_Open);
+            this.tabPage5.Controls.Add(this.lbl_System_Status);
+            this.tabPage5.Controls.Add(this.cb_Shutdown_En);
+            this.tabPage5.Controls.Add(this.cb_Shutter_open_en);
+            this.tabPage5.Controls.Add(this.cb_FF_Interlock_En);
+            this.tabPage5.Controls.Add(this.cb_Active_en);
+            this.tabPage5.Controls.Add(this.cb_Pulse_en);
+            this.tabPage5.Controls.Add(this.cb_Pulse_Pick_en);
+            this.tabPage5.Controls.Add(this.lbl_Laser_Ready);
+            this.tabPage5.Controls.Add(this.btn_Read_Ext_Interface);
+            this.tabPage5.Location = new System.Drawing.Point(4, 50);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(633, 490);
+            this.tabPage5.TabIndex = 7;
+            this.tabPage5.Text = "Extended Interface";
+            // 
+            // lbl_Shutter_Closed
+            // 
+            this.lbl_Shutter_Closed.AutoSize = true;
+            this.lbl_Shutter_Closed.Location = new System.Drawing.Point(352, 194);
+            this.lbl_Shutter_Closed.Name = "lbl_Shutter_Closed";
+            this.lbl_Shutter_Closed.Size = new System.Drawing.Size(110, 18);
+            this.lbl_Shutter_Closed.TabIndex = 77;
+            this.lbl_Shutter_Closed.Text = "Shutter Closed:";
+            // 
+            // lbl_Shutter_Open
+            // 
+            this.lbl_Shutter_Open.AutoSize = true;
+            this.lbl_Shutter_Open.Location = new System.Drawing.Point(352, 166);
+            this.lbl_Shutter_Open.Name = "lbl_Shutter_Open";
+            this.lbl_Shutter_Open.Size = new System.Drawing.Size(99, 18);
+            this.lbl_Shutter_Open.TabIndex = 76;
+            this.lbl_Shutter_Open.Text = "Shutter Open:";
+            // 
+            // lbl_System_Status
+            // 
+            this.lbl_System_Status.AutoSize = true;
+            this.lbl_System_Status.Location = new System.Drawing.Point(352, 135);
+            this.lbl_System_Status.Name = "lbl_System_Status";
+            this.lbl_System_Status.Size = new System.Drawing.Size(108, 18);
+            this.lbl_System_Status.TabIndex = 75;
+            this.lbl_System_Status.Text = "System Status:";
+            // 
+            // cb_Shutdown_En
+            // 
+            this.cb_Shutdown_En.AutoSize = true;
+            this.cb_Shutdown_En.Location = new System.Drawing.Point(20, 78);
+            this.cb_Shutdown_En.Name = "cb_Shutdown_En";
+            this.cb_Shutdown_En.Size = new System.Drawing.Size(115, 22);
+            this.cb_Shutdown_En.TabIndex = 74;
+            this.cb_Shutdown_En.Text = "Shutdown En";
+            this.cb_Shutdown_En.UseVisualStyleBackColor = true;
+            // 
+            // cb_Shutter_open_en
+            // 
+            this.cb_Shutter_open_en.AutoSize = true;
+            this.cb_Shutter_open_en.Location = new System.Drawing.Point(20, 106);
+            this.cb_Shutter_open_en.Name = "cb_Shutter_open_en";
+            this.cb_Shutter_open_en.Size = new System.Drawing.Size(131, 22);
+            this.cb_Shutter_open_en.TabIndex = 73;
+            this.cb_Shutter_open_en.Text = "Shutter open en";
+            this.cb_Shutter_open_en.UseVisualStyleBackColor = true;
+            // 
+            // cb_FF_Interlock_En
+            // 
+            this.cb_FF_Interlock_En.AutoSize = true;
+            this.cb_FF_Interlock_En.Location = new System.Drawing.Point(20, 50);
+            this.cb_FF_Interlock_En.Name = "cb_FF_Interlock_En";
+            this.cb_FF_Interlock_En.Size = new System.Drawing.Size(127, 22);
+            this.cb_FF_Interlock_En.TabIndex = 72;
+            this.cb_FF_Interlock_En.Text = "FF Interlock En";
+            this.cb_FF_Interlock_En.UseVisualStyleBackColor = true;
+            // 
+            // cb_Active_en
+            // 
+            this.cb_Active_en.AutoSize = true;
+            this.cb_Active_en.Location = new System.Drawing.Point(20, 134);
+            this.cb_Active_en.Name = "cb_Active_en";
+            this.cb_Active_en.Size = new System.Drawing.Size(86, 22);
+            this.cb_Active_en.TabIndex = 71;
+            this.cb_Active_en.Text = "Active en";
+            this.cb_Active_en.UseVisualStyleBackColor = true;
+            // 
+            // cb_Pulse_en
+            // 
+            this.cb_Pulse_en.AutoSize = true;
+            this.cb_Pulse_en.Location = new System.Drawing.Point(20, 162);
+            this.cb_Pulse_en.Name = "cb_Pulse_en";
+            this.cb_Pulse_en.Size = new System.Drawing.Size(84, 22);
+            this.cb_Pulse_en.TabIndex = 70;
+            this.cb_Pulse_en.Text = "Pulse en";
+            this.cb_Pulse_en.UseVisualStyleBackColor = true;
+            // 
+            // cb_Pulse_Pick_en
+            // 
+            this.cb_Pulse_Pick_en.AutoSize = true;
+            this.cb_Pulse_Pick_en.Location = new System.Drawing.Point(20, 190);
+            this.cb_Pulse_Pick_en.Name = "cb_Pulse_Pick_en";
+            this.cb_Pulse_Pick_en.Size = new System.Drawing.Size(117, 22);
+            this.cb_Pulse_Pick_en.TabIndex = 69;
+            this.cb_Pulse_Pick_en.Text = "Pulse Pick en";
+            this.cb_Pulse_Pick_en.UseVisualStyleBackColor = true;
+            // 
+            // lbl_Laser_Ready
+            // 
+            this.lbl_Laser_Ready.AutoSize = true;
+            this.lbl_Laser_Ready.Location = new System.Drawing.Point(352, 106);
+            this.lbl_Laser_Ready.Name = "lbl_Laser_Ready";
+            this.lbl_Laser_Ready.Size = new System.Drawing.Size(95, 18);
+            this.lbl_Laser_Ready.TabIndex = 68;
+            this.lbl_Laser_Ready.Text = "Laser Ready:";
+            // 
+            // btn_Read_Ext_Interface
+            // 
+            this.btn_Read_Ext_Interface.Location = new System.Drawing.Point(302, 50);
+            this.btn_Read_Ext_Interface.Name = "btn_Read_Ext_Interface";
+            this.btn_Read_Ext_Interface.Size = new System.Drawing.Size(141, 32);
+            this.btn_Read_Ext_Interface.TabIndex = 67;
+            this.btn_Read_Ext_Interface.Text = "Read Ext. Interface";
+            this.btn_Read_Ext_Interface.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage6.Controls.Add(this.cb_OS_Open);
+            this.tabPage6.Controls.Add(this.cb_OSERR2);
+            this.tabPage6.Controls.Add(this.cb_OI2_closed);
+            this.tabPage6.Controls.Add(this.cb_OI1_closed);
+            this.tabPage6.Controls.Add(this.cb_OS_Closed);
+            this.tabPage6.Controls.Add(this.cb_OSERR1);
+            this.tabPage6.Controls.Add(this.lbl_safeShutter_rd);
+            this.tabPage6.Controls.Add(this.btn_Read_Safe_Shutter);
+            this.tabPage6.Location = new System.Drawing.Point(4, 50);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(633, 490);
+            this.tabPage6.TabIndex = 8;
+            this.tabPage6.Text = "Safe Shutter";
+            // 
+            // cb_OS_Open
+            // 
+            this.cb_OS_Open.AutoSize = true;
+            this.cb_OS_Open.Location = new System.Drawing.Point(23, 123);
+            this.cb_OS_Open.Name = "cb_OS_Open";
+            this.cb_OS_Open.Size = new System.Drawing.Size(89, 22);
+            this.cb_OS_Open.TabIndex = 66;
+            this.cb_OS_Open.Text = "OS Open";
+            this.cb_OS_Open.UseVisualStyleBackColor = true;
+            // 
+            // cb_OSERR2
+            // 
+            this.cb_OSERR2.AutoSize = true;
+            this.cb_OSERR2.Location = new System.Drawing.Point(23, 151);
+            this.cb_OSERR2.Name = "cb_OSERR2";
+            this.cb_OSERR2.Size = new System.Drawing.Size(89, 22);
+            this.cb_OSERR2.TabIndex = 65;
+            this.cb_OSERR2.Text = "OSERR2";
+            this.cb_OSERR2.UseVisualStyleBackColor = true;
+            // 
+            // cb_OI2_closed
+            // 
+            this.cb_OI2_closed.AutoSize = true;
+            this.cb_OI2_closed.Location = new System.Drawing.Point(23, 95);
+            this.cb_OI2_closed.Name = "cb_OI2_closed";
+            this.cb_OI2_closed.Size = new System.Drawing.Size(98, 22);
+            this.cb_OI2_closed.TabIndex = 64;
+            this.cb_OI2_closed.Text = "OI2 closed";
+            this.cb_OI2_closed.UseVisualStyleBackColor = true;
+            // 
+            // cb_OI1_closed
+            // 
+            this.cb_OI1_closed.AutoSize = true;
+            this.cb_OI1_closed.Location = new System.Drawing.Point(133, 95);
+            this.cb_OI1_closed.Name = "cb_OI1_closed";
+            this.cb_OI1_closed.Size = new System.Drawing.Size(98, 22);
+            this.cb_OI1_closed.TabIndex = 63;
+            this.cb_OI1_closed.Text = "OI1 closed";
+            this.cb_OI1_closed.UseVisualStyleBackColor = true;
+            // 
+            // cb_OS_Closed
+            // 
+            this.cb_OS_Closed.AutoSize = true;
+            this.cb_OS_Closed.Location = new System.Drawing.Point(133, 123);
+            this.cb_OS_Closed.Name = "cb_OS_Closed";
+            this.cb_OS_Closed.Size = new System.Drawing.Size(100, 22);
+            this.cb_OS_Closed.TabIndex = 62;
+            this.cb_OS_Closed.Text = "OS Closed";
+            this.cb_OS_Closed.UseVisualStyleBackColor = true;
+            // 
+            // cb_OSERR1
+            // 
+            this.cb_OSERR1.AutoSize = true;
+            this.cb_OSERR1.Location = new System.Drawing.Point(133, 151);
+            this.cb_OSERR1.Name = "cb_OSERR1";
+            this.cb_OSERR1.Size = new System.Drawing.Size(89, 22);
+            this.cb_OSERR1.TabIndex = 61;
+            this.cb_OSERR1.Text = "OSERR1";
+            this.cb_OSERR1.UseVisualStyleBackColor = true;
+            // 
+            // lbl_safeShutter_rd
+            // 
+            this.lbl_safeShutter_rd.AutoSize = true;
+            this.lbl_safeShutter_rd.Location = new System.Drawing.Point(184, 36);
+            this.lbl_safeShutter_rd.Name = "lbl_safeShutter_rd";
+            this.lbl_safeShutter_rd.Size = new System.Drawing.Size(196, 18);
+            this.lbl_safeShutter_rd.TabIndex = 60;
+            this.lbl_safeShutter_rd.Text = "IS Open:    CanRelayClosed:";
+            // 
+            // btn_Read_Safe_Shutter
+            // 
+            this.btn_Read_Safe_Shutter.Location = new System.Drawing.Point(23, 29);
+            this.btn_Read_Safe_Shutter.Name = "btn_Read_Safe_Shutter";
+            this.btn_Read_Safe_Shutter.Size = new System.Drawing.Size(141, 32);
+            this.btn_Read_Safe_Shutter.TabIndex = 59;
+            this.btn_Read_Safe_Shutter.Text = "Read Safe Shutter";
+            this.btn_Read_Safe_Shutter.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage7.Controls.Add(this.tb_Set_SHG_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_SHG_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_Base_2_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_Base_2_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_Base_1_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_Base_1_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_PC3_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_PC3_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_CFBG2_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_CFBG2_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_CFBG_Temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_CFBG_Temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_D2_temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_D2_temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_D1_temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_D1_temp_C);
+            this.tabPage7.Controls.Add(this.tb_Set_DS_temp_C);
+            this.tabPage7.Controls.Add(this.btn_Set_DS_temp_C);
+            this.tabPage7.Location = new System.Drawing.Point(4, 50);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(633, 490);
+            this.tabPage7.TabIndex = 9;
+            this.tabPage7.Text = "Temperatures";
+            // 
+            // tb_Set_SHG_Temp_C
+            // 
+            this.tb_Set_SHG_Temp_C.Location = new System.Drawing.Point(189, 417);
+            this.tb_Set_SHG_Temp_C.Name = "tb_Set_SHG_Temp_C";
+            this.tb_Set_SHG_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_SHG_Temp_C.TabIndex = 55;
+            // 
+            // btn_Set_SHG_Temp_C
+            // 
+            this.btn_Set_SHG_Temp_C.Location = new System.Drawing.Point(22, 413);
+            this.btn_Set_SHG_Temp_C.Name = "btn_Set_SHG_Temp_C";
+            this.btn_Set_SHG_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_SHG_Temp_C.TabIndex = 54;
+            this.btn_Set_SHG_Temp_C.Text = "Set SHG Temp C";
+            this.btn_Set_SHG_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_Base_2_Temp_C
+            // 
+            this.tb_Set_Base_2_Temp_C.Location = new System.Drawing.Point(189, 365);
+            this.tb_Set_Base_2_Temp_C.Name = "tb_Set_Base_2_Temp_C";
+            this.tb_Set_Base_2_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_Base_2_Temp_C.TabIndex = 53;
+            // 
+            // btn_Set_Base_2_Temp_C
+            // 
+            this.btn_Set_Base_2_Temp_C.Location = new System.Drawing.Point(22, 361);
+            this.btn_Set_Base_2_Temp_C.Name = "btn_Set_Base_2_Temp_C";
+            this.btn_Set_Base_2_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_Base_2_Temp_C.TabIndex = 52;
+            this.btn_Set_Base_2_Temp_C.Text = "Set Base 2 Temp C";
+            this.btn_Set_Base_2_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_Base_1_Temp_C
+            // 
+            this.tb_Set_Base_1_Temp_C.Location = new System.Drawing.Point(189, 310);
+            this.tb_Set_Base_1_Temp_C.Name = "tb_Set_Base_1_Temp_C";
+            this.tb_Set_Base_1_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_Base_1_Temp_C.TabIndex = 45;
+            // 
+            // btn_Set_Base_1_Temp_C
+            // 
+            this.btn_Set_Base_1_Temp_C.Location = new System.Drawing.Point(22, 306);
+            this.btn_Set_Base_1_Temp_C.Name = "btn_Set_Base_1_Temp_C";
+            this.btn_Set_Base_1_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_Base_1_Temp_C.TabIndex = 44;
+            this.btn_Set_Base_1_Temp_C.Text = "Set Base 1 Temp C";
+            this.btn_Set_Base_1_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_PC3_Temp_C
+            // 
+            this.tb_Set_PC3_Temp_C.Location = new System.Drawing.Point(189, 272);
+            this.tb_Set_PC3_Temp_C.Name = "tb_Set_PC3_Temp_C";
+            this.tb_Set_PC3_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_PC3_Temp_C.TabIndex = 43;
+            // 
+            // btn_Set_PC3_Temp_C
+            // 
+            this.btn_Set_PC3_Temp_C.Location = new System.Drawing.Point(22, 268);
+            this.btn_Set_PC3_Temp_C.Name = "btn_Set_PC3_Temp_C";
+            this.btn_Set_PC3_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_PC3_Temp_C.TabIndex = 42;
+            this.btn_Set_PC3_Temp_C.Text = "Set PC3 Temp C";
+            this.btn_Set_PC3_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_CFBG2_Temp_C
+            // 
+            this.tb_Set_CFBG2_Temp_C.Location = new System.Drawing.Point(189, 220);
+            this.tb_Set_CFBG2_Temp_C.Name = "tb_Set_CFBG2_Temp_C";
+            this.tb_Set_CFBG2_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_CFBG2_Temp_C.TabIndex = 23;
+            // 
+            // btn_Set_CFBG2_Temp_C
+            // 
+            this.btn_Set_CFBG2_Temp_C.Location = new System.Drawing.Point(22, 216);
+            this.btn_Set_CFBG2_Temp_C.Name = "btn_Set_CFBG2_Temp_C";
+            this.btn_Set_CFBG2_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_CFBG2_Temp_C.TabIndex = 22;
+            this.btn_Set_CFBG2_Temp_C.Text = "Set CFBG2 temp C";
+            this.btn_Set_CFBG2_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_CFBG_Temp_C
+            // 
+            this.tb_Set_CFBG_Temp_C.Location = new System.Drawing.Point(189, 182);
+            this.tb_Set_CFBG_Temp_C.Name = "tb_Set_CFBG_Temp_C";
+            this.tb_Set_CFBG_Temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_CFBG_Temp_C.TabIndex = 21;
+            // 
+            // btn_Set_CFBG_Temp_C
+            // 
+            this.btn_Set_CFBG_Temp_C.Location = new System.Drawing.Point(22, 178);
+            this.btn_Set_CFBG_Temp_C.Name = "btn_Set_CFBG_Temp_C";
+            this.btn_Set_CFBG_Temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_CFBG_Temp_C.TabIndex = 20;
+            this.btn_Set_CFBG_Temp_C.Text = "Set CFBG Temp C";
+            this.btn_Set_CFBG_Temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_D2_temp_C
+            // 
+            this.tb_Set_D2_temp_C.Location = new System.Drawing.Point(189, 131);
+            this.tb_Set_D2_temp_C.Name = "tb_Set_D2_temp_C";
+            this.tb_Set_D2_temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_D2_temp_C.TabIndex = 15;
+            // 
+            // btn_Set_D2_temp_C
+            // 
+            this.btn_Set_D2_temp_C.Location = new System.Drawing.Point(22, 127);
+            this.btn_Set_D2_temp_C.Name = "btn_Set_D2_temp_C";
+            this.btn_Set_D2_temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_D2_temp_C.TabIndex = 14;
+            this.btn_Set_D2_temp_C.Text = "Set D2 temp C";
+            this.btn_Set_D2_temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_D1_temp_C
+            // 
+            this.tb_Set_D1_temp_C.Location = new System.Drawing.Point(189, 81);
+            this.tb_Set_D1_temp_C.Name = "tb_Set_D1_temp_C";
+            this.tb_Set_D1_temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_D1_temp_C.TabIndex = 11;
+            // 
+            // btn_Set_D1_temp_C
+            // 
+            this.btn_Set_D1_temp_C.Location = new System.Drawing.Point(22, 77);
+            this.btn_Set_D1_temp_C.Name = "btn_Set_D1_temp_C";
+            this.btn_Set_D1_temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_D1_temp_C.TabIndex = 10;
+            this.btn_Set_D1_temp_C.Text = "Set D1 temp C";
+            this.btn_Set_D1_temp_C.UseVisualStyleBackColor = true;
+            // 
+            // tb_Set_DS_temp_C
+            // 
+            this.tb_Set_DS_temp_C.Location = new System.Drawing.Point(189, 33);
+            this.tb_Set_DS_temp_C.Name = "tb_Set_DS_temp_C";
+            this.tb_Set_DS_temp_C.Size = new System.Drawing.Size(57, 24);
+            this.tb_Set_DS_temp_C.TabIndex = 7;
+            // 
+            // btn_Set_DS_temp_C
+            // 
+            this.btn_Set_DS_temp_C.Location = new System.Drawing.Point(22, 29);
+            this.btn_Set_DS_temp_C.Name = "btn_Set_DS_temp_C";
+            this.btn_Set_DS_temp_C.Size = new System.Drawing.Size(146, 32);
+            this.btn_Set_DS_temp_C.TabIndex = 6;
+            this.btn_Set_DS_temp_C.Text = "Set DS temp C";
+            this.btn_Set_DS_temp_C.UseVisualStyleBackColor = true;
+            // 
+            // cb_use_bit_read_porta
+            // 
+            this.cb_use_bit_read_porta.AutoSize = true;
+            this.cb_use_bit_read_porta.Location = new System.Drawing.Point(612, 202);
+            this.cb_use_bit_read_porta.Name = "cb_use_bit_read_porta";
+            this.cb_use_bit_read_porta.Size = new System.Drawing.Size(75, 22);
+            this.cb_use_bit_read_porta.TabIndex = 28;
+            this.cb_use_bit_read_porta.Text = "Use Bit";
+            this.cb_use_bit_read_porta.UseVisualStyleBackColor = true;
+            // 
+            // cb_use_bit_read_portb
+            // 
+            this.cb_use_bit_read_portb.AutoSize = true;
+            this.cb_use_bit_read_portb.Location = new System.Drawing.Point(612, 241);
+            this.cb_use_bit_read_portb.Name = "cb_use_bit_read_portb";
+            this.cb_use_bit_read_portb.Size = new System.Drawing.Size(75, 22);
+            this.cb_use_bit_read_portb.TabIndex = 29;
+            this.cb_use_bit_read_portb.Text = "Use Bit";
+            this.cb_use_bit_read_portb.UseVisualStyleBackColor = true;
+            // 
+            // cb_use_bit_write_porta
+            // 
+            this.cb_use_bit_write_porta.AutoSize = true;
+            this.cb_use_bit_write_porta.Location = new System.Drawing.Point(612, 299);
+            this.cb_use_bit_write_porta.Name = "cb_use_bit_write_porta";
+            this.cb_use_bit_write_porta.Size = new System.Drawing.Size(75, 22);
+            this.cb_use_bit_write_porta.TabIndex = 30;
+            this.cb_use_bit_write_porta.Text = "Use Bit";
+            this.cb_use_bit_write_porta.UseVisualStyleBackColor = true;
+            // 
+            // cb_use_bit_write_portb
+            // 
+            this.cb_use_bit_write_portb.AutoSize = true;
+            this.cb_use_bit_write_portb.Location = new System.Drawing.Point(612, 335);
+            this.cb_use_bit_write_portb.Name = "cb_use_bit_write_portb";
+            this.cb_use_bit_write_portb.Size = new System.Drawing.Size(75, 22);
+            this.cb_use_bit_write_portb.TabIndex = 31;
+            this.cb_use_bit_write_portb.Text = "Use Bit";
+            this.cb_use_bit_write_portb.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(216, 183);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(61, 18);
+            this.label23.TabIndex = 32;
+            this.label23.Text = "Bit Num";
+            // 
+            // tb_bit_num_rd_porta
+            // 
+            this.tb_bit_num_rd_porta.Location = new System.Drawing.Point(233, 204);
+            this.tb_bit_num_rd_porta.Name = "tb_bit_num_rd_porta";
+            this.tb_bit_num_rd_porta.Size = new System.Drawing.Size(22, 24);
+            this.tb_bit_num_rd_porta.TabIndex = 33;
+            this.tb_bit_num_rd_porta.Text = "0";
+            // 
+            // tb_bit_num_rd_portb
+            // 
+            this.tb_bit_num_rd_portb.Location = new System.Drawing.Point(233, 239);
+            this.tb_bit_num_rd_portb.Name = "tb_bit_num_rd_portb";
+            this.tb_bit_num_rd_portb.Size = new System.Drawing.Size(22, 24);
+            this.tb_bit_num_rd_portb.TabIndex = 34;
+            this.tb_bit_num_rd_portb.Text = "0";
+            // 
+            // tb_bit_num_wr_porta
+            // 
+            this.tb_bit_num_wr_porta.Location = new System.Drawing.Point(233, 298);
+            this.tb_bit_num_wr_porta.Name = "tb_bit_num_wr_porta";
+            this.tb_bit_num_wr_porta.Size = new System.Drawing.Size(22, 24);
+            this.tb_bit_num_wr_porta.TabIndex = 35;
+            this.tb_bit_num_wr_porta.Text = "0";
+            // 
+            // tb_bit_num_wr_portb
+            // 
+            this.tb_bit_num_wr_portb.Location = new System.Drawing.Point(233, 333);
+            this.tb_bit_num_wr_portb.Name = "tb_bit_num_wr_portb";
+            this.tb_bit_num_wr_portb.Size = new System.Drawing.Size(22, 24);
+            this.tb_bit_num_wr_portb.TabIndex = 36;
+            this.tb_bit_num_wr_portb.Text = "0";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 573);
+            this.ClientSize = new System.Drawing.Size(737, 619);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1118,6 +1870,14 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1217,6 +1977,74 @@
         private System.Windows.Forms.TextBox tb_23017_write_reg_data;
         private System.Windows.Forms.TextBox tb_23017_write_reg_reg;
         private System.Windows.Forms.Button btn_23017_write_reg;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btn_setup_basic_conf;
+        private System.Windows.Forms.Label lbl_read_recirc;
+        private System.Windows.Forms.Button btn_read_recirc;
+        private System.Windows.Forms.CheckBox cb_keyOn;
+        private System.Windows.Forms.Label lbl_indicator;
+        private System.Windows.Forms.Button btn_read_indicator;
+        private System.Windows.Forms.TextBox tb_set_pd3_ave_v;
+        private System.Windows.Forms.Button btn_set_pd3_ave_v;
+        private System.Windows.Forms.TextBox tb_set_pd2_ave_v;
+        private System.Windows.Forms.Button btn_set_pd2_ave_v;
+        private System.Windows.Forms.TextBox tb_set_pd1_ave_v;
+        private System.Windows.Forms.Button btn_set_pd1_ave_v;
+        private System.Windows.Forms.TextBox tb_set_pds_ave_v;
+        private System.Windows.Forms.Button btn_set_pds_ave_v;
+        private System.Windows.Forms.Button btn_run_control;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label lbl_Shutter_Closed;
+        private System.Windows.Forms.Label lbl_Shutter_Open;
+        private System.Windows.Forms.Label lbl_System_Status;
+        private System.Windows.Forms.CheckBox cb_Shutdown_En;
+        private System.Windows.Forms.CheckBox cb_Shutter_open_en;
+        private System.Windows.Forms.CheckBox cb_FF_Interlock_En;
+        private System.Windows.Forms.CheckBox cb_Active_en;
+        private System.Windows.Forms.CheckBox cb_Pulse_en;
+        private System.Windows.Forms.CheckBox cb_Pulse_Pick_en;
+        private System.Windows.Forms.Label lbl_Laser_Ready;
+        private System.Windows.Forms.Button btn_Read_Ext_Interface;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.CheckBox cb_OS_Open;
+        private System.Windows.Forms.CheckBox cb_OSERR2;
+        private System.Windows.Forms.CheckBox cb_OI2_closed;
+        private System.Windows.Forms.CheckBox cb_OI1_closed;
+        private System.Windows.Forms.CheckBox cb_OS_Closed;
+        private System.Windows.Forms.CheckBox cb_OSERR1;
+        private System.Windows.Forms.Label lbl_safeShutter_rd;
+        private System.Windows.Forms.Button btn_Read_Safe_Shutter;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TextBox tb_Set_Base_2_Temp_C;
+        private System.Windows.Forms.Button btn_Set_Base_2_Temp_C;
+        private System.Windows.Forms.TextBox tb_Set_Base_1_Temp_C;
+        private System.Windows.Forms.Button btn_Set_Base_1_Temp_C;
+        private System.Windows.Forms.TextBox tb_Set_PC3_Temp_C;
+        private System.Windows.Forms.Button btn_Set_PC3_Temp_C;
+        private System.Windows.Forms.TextBox tb_Set_CFBG2_Temp_C;
+        private System.Windows.Forms.Button btn_Set_CFBG2_Temp_C;
+        private System.Windows.Forms.TextBox tb_Set_CFBG_Temp_C;
+        private System.Windows.Forms.Button btn_Set_CFBG_Temp_C;
+        private System.Windows.Forms.TextBox tb_Set_D2_temp_C;
+        private System.Windows.Forms.Button btn_Set_D2_temp_C;
+        private System.Windows.Forms.TextBox tb_Set_D1_temp_C;
+        private System.Windows.Forms.Button btn_Set_D1_temp_C;
+        private System.Windows.Forms.TextBox tb_Set_DS_temp_C;
+        private System.Windows.Forms.Button btn_Set_DS_temp_C;
+        private System.Windows.Forms.TextBox tb_set_humidity_percent;
+        private System.Windows.Forms.Button btn_set_humidity_percent;
+        private System.Windows.Forms.TextBox tb_Set_SHG_Temp_C;
+        private System.Windows.Forms.Button btn_Set_SHG_Temp_C;
+        private System.Windows.Forms.CheckBox cb_interlock_en;
+        private System.Windows.Forms.TextBox tb_bit_num_wr_portb;
+        private System.Windows.Forms.TextBox tb_bit_num_wr_porta;
+        private System.Windows.Forms.TextBox tb_bit_num_rd_portb;
+        private System.Windows.Forms.TextBox tb_bit_num_rd_porta;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.CheckBox cb_use_bit_write_portb;
+        private System.Windows.Forms.CheckBox cb_use_bit_write_porta;
+        private System.Windows.Forms.CheckBox cb_use_bit_read_portb;
+        private System.Windows.Forms.CheckBox cb_use_bit_read_porta;
     }
 }
 

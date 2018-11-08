@@ -63,6 +63,18 @@ namespace SpiI2cControlCsharp
 
 
 
+        //   send GXARNZ<cr>  read device N(0-5) port A bit Z
+        //    rec back gxarnzD   with data  D(1-bit hex) 
+        //
+        //   send GXBRNZ<cr>  read device N(0-5) port B bit Z
+        //    rec back gxbrnzD   with data  DD(8-bit hex) 
+        //
+        //   send GXAWNZD<cr>  write device N(0-5) port A bit Z with data D(1-bit hex) 
+        //    rec back gxawnzD   
+        //
+        //   send GXBWNZD<cr>  read device N(0-5) port B bit Zwith data  D(1-bit hex) 
+        //    rec back gxbwnzD  
+
         // to do:
 
     }
